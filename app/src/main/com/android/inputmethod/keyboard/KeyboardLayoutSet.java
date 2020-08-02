@@ -27,7 +27,6 @@ import android.util.Xml;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodSubtype;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.compat.EditorInfoCompatUtils;
 import com.android.inputmethod.compat.InputMethodSubtypeCompatUtils;
 import com.android.inputmethod.compat.UserManagerCompatUtils;
@@ -50,6 +49,8 @@ import java.util.HashMap;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+
+import AOSP.KEYBOARD.R;
 
 import static com.android.inputmethod.latin.common.Constants.ImeOption.FORCE_ASCII;
 import static com.android.inputmethod.latin.common.Constants.ImeOption.NO_SETTINGS_KEY;
@@ -122,6 +123,9 @@ public final class KeyboardLayoutSet {
         boolean mIsSpellChecker;
         int mKeyboardWidth;
         int mKeyboardHeight;
+        boolean mShowMoreKeys;
+        boolean mShowNumberRow;
+
         int mScriptId = ScriptUtils.SCRIPT_LATIN;
         // Indicates if the user has enabled the split-layout preference
         // and the required ProductionFlags are enabled.
@@ -323,6 +327,16 @@ public final class KeyboardLayoutSet {
 
         public Builder setLanguageSwitchKeyEnabled(final boolean enabled) {
             mParams.mLanguageSwitchKeyEnabled = enabled;
+            return this;
+        }
+
+        public Builder setShowSpecialChars(final boolean enabled) {
+            mParams.mShowMoreKeys = enabled;
+            return this;
+        }
+
+        public Builder setShowNumberRow(final boolean enabled) {
+            mParams.mShowNumberRow = enabled;
             return this;
         }
 

@@ -1022,12 +1022,16 @@ public final class RichInputConnection implements PrivateCommandPerformer {
      * out that we actually need more detailed error codes)
      */
     public boolean requestCursorUpdates(final boolean enableMonitor,
-            final boolean requestImmediateCallback) {
+                                        final boolean requestImmediateCallback) {
         mIC = mParent.getCurrentInputConnection();
         if (!isConnected()) {
             return false;
         }
         return InputConnectionCompatUtils.requestCursorUpdates(
                 mIC, enableMonitor, requestImmediateCallback);
+    }
+
+    public boolean hasCursorPosition() {
+        return mExpectedSelStart != INVALID_CURSOR_POSITION && mExpectedSelEnd != INVALID_CURSOR_POSITION;
     }
 }

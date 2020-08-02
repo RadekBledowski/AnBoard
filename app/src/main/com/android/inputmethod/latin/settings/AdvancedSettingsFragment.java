@@ -23,9 +23,11 @@ import android.media.AudioManager;
 import android.os.Bundle;
 import android.preference.ListPreference;
 
-import AOSP.KEYBOARD.R;
+import com.android.inputmethod.keyboard.KeyboardLayoutSet;
 import com.android.inputmethod.latin.AudioAndHapticFeedbackManager;
 import com.android.inputmethod.latin.SystemBroadcastReceiver;
+
+import AOSP.KEYBOARD.R;
 
 /**
  * "Advanced" settings sub screen.
@@ -102,6 +104,11 @@ public final class AdvancedSettingsFragment extends SubScreenFragment {
     @Override
     public void onSharedPreferenceChanged(final SharedPreferences prefs, final String key) {
         final Resources res = getResources();
+
+        if (key.equals(Settings.PREF_HIDE_SPECIAL_CHARS) ||
+                key.equals(Settings.PREF_SHOW_NUMBER_ROW))
+            KeyboardLayoutSet.onKeyboardThemeChanged();
+
         if (key.equals(Settings.PREF_POPUP_ON)) {
             setPreferenceEnabled(Settings.PREF_KEY_PREVIEW_POPUP_DISMISS_DELAY,
                     Settings.readKeyPreviewPopupEnabled(prefs, res));
@@ -110,6 +117,7 @@ public final class AdvancedSettingsFragment extends SubScreenFragment {
         }
         updateListPreferenceSummaryToCurrentValue(Settings.PREF_KEY_PREVIEW_POPUP_DISMISS_DELAY);
         refreshEnablingsOfKeypressSoundAndVibrationSettings();
+
     }
 
     private void refreshEnablingsOfKeypressSoundAndVibrationSettings() {

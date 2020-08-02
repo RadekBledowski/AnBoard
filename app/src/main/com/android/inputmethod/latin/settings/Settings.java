@@ -84,8 +84,12 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
             "pref_include_other_imes_in_language_switch_list";
     public static final String PREF_CUSTOM_INPUT_STYLES = "custom_input_styles";
     public static final String PREF_ENABLE_SPLIT_KEYBOARD = "pref_split_keyboard";
+    public static final String PREF_KEYBOARD_HEIGHT_SCALE = "pref_keyboard_height_scale";
     public static final String PREF_KEYBOARD_COLOR = "pref_keyboard_color";
-
+    public static final String PREF_HIDE_SPECIAL_CHARS = "pref_hide_special_chars";
+    public static final String PREF_SHOW_NUMBER_ROW = "pref_show_number_row";
+    public static final String PREF_SPACE_SWIPE = "pref_space_swipe";
+    public static final String PREF_DELETE_SWIPE = "pref_delete_swipe";
     // TODO: consolidate key preview dismiss delay with the key preview animation parameters.
     public static final String PREF_KEY_PREVIEW_POPUP_DISMISS_DELAY =
             "pref_key_preview_popup_dismiss_delay";
@@ -277,15 +281,31 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
         return prefs.getBoolean(PREF_SHOW_LANGUAGE_SWITCH_KEY, true);
     }
 
+    public static boolean readHideSpecialChars(final SharedPreferences prefs) {
+        return prefs.getBoolean(PREF_HIDE_SPECIAL_CHARS, false);
+    }
+
+    public static boolean readShowNumberRow(final SharedPreferences prefs) {
+        return prefs.getBoolean(PREF_SHOW_NUMBER_ROW, false);
+    }
+
+    public static boolean readSpaceSwipeEnabled(final SharedPreferences prefs) {
+        return prefs.getBoolean(PREF_SPACE_SWIPE, true);
+    }
+
+    public static boolean readDeleteSwipeEnabled(final SharedPreferences prefs) {
+        return prefs.getBoolean(PREF_DELETE_SWIPE, true);
+    }
+
     public static String readPrefAdditionalSubtypes(final SharedPreferences prefs,
-            final Resources res) {
+                                                    final Resources res) {
         final String predefinedPrefSubtypes = AdditionalSubtypeUtils.createPrefSubtypes(
                 res.getStringArray(R.array.predefined_subtypes));
         return prefs.getString(PREF_CUSTOM_INPUT_STYLES, predefinedPrefSubtypes);
     }
 
     public static void writePrefAdditionalSubtypes(final SharedPreferences prefs,
-            final String prefSubtypes) {
+                                                   final String prefSubtypes) {
         prefs.edit().putString(PREF_CUSTOM_INPUT_STYLES, prefSubtypes).apply();
     }
 

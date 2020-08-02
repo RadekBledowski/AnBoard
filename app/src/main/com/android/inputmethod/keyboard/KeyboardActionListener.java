@@ -97,36 +97,69 @@ public interface KeyboardActionListener {
 
     /**
      * Send a non-"code input" custom request to the listener.
+     *
      * @return true if the request has been consumed, false otherwise.
      */
     public boolean onCustomRequest(int requestCode);
+
+    void onMovePointer(int steps);
+
+    void onMoveDeletePointer(int steps);
 
     public static final KeyboardActionListener EMPTY_LISTENER = new Adapter();
 
     public static class Adapter implements KeyboardActionListener {
         @Override
-        public void onPressKey(int primaryCode, int repeatCount, boolean isSinglePointer) {}
+        public void onPressKey(int primaryCode, int repeatCount, boolean isSinglePointer) {
+        }
+
         @Override
-        public void onReleaseKey(int primaryCode, boolean withSliding) {}
+        public void onReleaseKey(int primaryCode, boolean withSliding) {
+        }
+
         @Override
-        public void onCodeInput(int primaryCode, int x, int y, boolean isKeyRepeat) {}
+        public void onCodeInput(int primaryCode, int x, int y, boolean isKeyRepeat) {
+        }
+
         @Override
-        public void onTextInput(String text) {}
+        public void onTextInput(String text) {
+        }
+
         @Override
-        public void onStartBatchInput() {}
+        public void onStartBatchInput() {
+        }
+
         @Override
-        public void onUpdateBatchInput(InputPointers batchPointers) {}
+        public void onUpdateBatchInput(InputPointers batchPointers) {
+        }
+
         @Override
-        public void onEndBatchInput(InputPointers batchPointers) {}
+        public void onEndBatchInput(InputPointers batchPointers) {
+        }
+
         @Override
-        public void onCancelBatchInput() {}
+        public void onCancelBatchInput() {
+        }
+
         @Override
-        public void onCancelInput() {}
+        public void onCancelInput() {
+        }
+
         @Override
-        public void onFinishSlidingInput() {}
+        public void onFinishSlidingInput() {
+        }
+
         @Override
         public boolean onCustomRequest(int requestCode) {
             return false;
+        }
+
+        @Override
+        public void onMovePointer(int steps) {
+        }
+
+        @Override
+        public void onMoveDeletePointer(int steps) {
         }
     }
 }

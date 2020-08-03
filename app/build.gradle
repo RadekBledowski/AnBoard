@@ -1,20 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
-        applicationId "AOSP.KEYBOARD"
+        applicationId "pl.rkbdi.anboard"
         minSdkVersion 14
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
-// UNCOMMENT TO BUILD NATIVE
-//        externalNativeBuild {
-//            ndkBuild {
-//                cppFlags "-std=c++11"
-//                abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
-//            }
-//        }
+        versionName "1.0.0"
     }
 
     sourceSets {
@@ -27,18 +20,11 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     buildToolsVersion = '28.0.3'
-
-// UNCOMMENT TO BUILD NATIVE
-//    externalNativeBuild {
-//        ndkBuild {
-//            path "src/main/cpp/Android.mk"
-//        }
-//    }
 }
 
 dependencies {

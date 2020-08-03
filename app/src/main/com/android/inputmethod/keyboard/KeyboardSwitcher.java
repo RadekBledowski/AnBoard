@@ -45,7 +45,7 @@ import com.android.inputmethod.latin.utils.ScriptUtils;
 
 import javax.annotation.Nonnull;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     private static final String TAG = KeyboardSwitcher.class.getSimpleName();

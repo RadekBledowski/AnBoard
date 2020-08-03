@@ -18,7 +18,6 @@ package com.android.inputmethod.latin.settings;
 
 import android.content.res.Resources;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.annotations.UsedForTesting;
 import com.android.inputmethod.keyboard.internal.MoreKeySpec;
 import com.android.inputmethod.latin.PunctuationSuggestions;
@@ -27,6 +26,8 @@ import com.android.inputmethod.latin.common.StringUtils;
 
 import java.util.Arrays;
 import java.util.Locale;
+
+import pl.rkbdi.anboard.R;
 
 public final class SpacingAndPunctuations {
     private final int[] mSortedSymbolsPrecededBySpace;

@@ -25,7 +25,7 @@ import android.view.ViewPropertyAnimator;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 /**
  * A view that handles buttons inside it according to a status.

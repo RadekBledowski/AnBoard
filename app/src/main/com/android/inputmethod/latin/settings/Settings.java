@@ -43,7 +43,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import javax.annotation.Nonnull;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 public final class Settings implements SharedPreferences.OnSharedPreferenceChangeListener {
     private static final String TAG = Settings.class.getSimpleName();

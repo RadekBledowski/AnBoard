@@ -21,13 +21,14 @@ import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.util.Log;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.utils.DictionaryInfoUtils;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Locale;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * Factory for dictionary instances.

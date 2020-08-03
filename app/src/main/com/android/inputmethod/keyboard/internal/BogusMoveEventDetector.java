@@ -20,9 +20,10 @@ import android.content.res.Resources;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.common.Constants;
 import com.android.inputmethod.latin.define.DebugFlags;
+
+import pl.rkbdi.anboard.R;
 
 // This hack is applied to certain classes of tablets.
 public final class BogusMoveEventDetector {

@@ -48,7 +48,7 @@ import java.util.concurrent.TimeUnit;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 /**
  * This class encapsulates the logic for the Latin-IME side of dictionary information management.

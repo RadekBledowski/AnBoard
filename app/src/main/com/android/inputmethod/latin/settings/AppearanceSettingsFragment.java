@@ -24,7 +24,7 @@ import com.android.inputmethod.latin.define.ProductionFlags;
 
 import java.util.Locale;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 /**
  * "Appearance" settings sub screen.

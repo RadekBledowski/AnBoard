@@ -21,7 +21,6 @@ import android.content.res.Resources;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.Keyboard;
 import com.android.inputmethod.keyboard.internal.KeyboardBuilder;
@@ -30,6 +29,8 @@ import com.android.inputmethod.keyboard.internal.KeyboardParams;
 import com.android.inputmethod.latin.SuggestedWords;
 import com.android.inputmethod.latin.common.Constants;
 import com.android.inputmethod.latin.utils.TypefaceUtils;
+
+import pl.rkbdi.anboard.R;
 
 public final class MoreSuggestions extends Keyboard {
     public final SuggestedWords mSuggestedWords;

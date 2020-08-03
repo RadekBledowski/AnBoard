@@ -21,7 +21,6 @@ import android.media.AudioManager;
 import android.os.Build;
 import android.os.SystemClock;
 import android.provider.Settings;
-import androidx.core.view.accessibility.AccessibilityEventCompat;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -32,10 +31,13 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
 import android.view.inputmethod.EditorInfo;
 
-import AOSP.KEYBOARD.R;
+import androidx.core.view.accessibility.AccessibilityEventCompat;
+
 import com.android.inputmethod.compat.SettingsSecureCompatUtils;
 import com.android.inputmethod.latin.SuggestedWords;
 import com.android.inputmethod.latin.utils.InputTypeUtils;
+
+import pl.rkbdi.anboard.R;
 
 public final class AccessibilityUtils {
     private static final String TAG = AccessibilityUtils.class.getSimpleName();

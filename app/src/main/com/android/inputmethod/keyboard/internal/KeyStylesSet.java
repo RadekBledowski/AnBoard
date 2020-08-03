@@ -20,7 +20,6 @@ import android.content.res.TypedArray;
 import android.util.Log;
 import android.util.SparseArray;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.utils.XmlParseUtils;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -31,6 +30,8 @@ import java.util.HashMap;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+
+import pl.rkbdi.anboard.R;
 
 public final class KeyStylesSet {
     private static final String TAG = KeyStylesSet.class.getSimpleName();

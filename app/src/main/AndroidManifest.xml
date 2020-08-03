@@ -15,8 +15,8 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          coreApp="true"
-          package="AOSP.KEYBOARD">
+    coreApp="true"
+    package="pl.rkbdi.anboard">
 
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

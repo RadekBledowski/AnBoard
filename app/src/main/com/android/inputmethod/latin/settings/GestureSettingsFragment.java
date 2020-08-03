@@ -18,7 +18,7 @@ package com.android.inputmethod.latin.settings;
 
 import android.os.Bundle;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 /**
  * "Gesture typing preferences" settings sub screen.

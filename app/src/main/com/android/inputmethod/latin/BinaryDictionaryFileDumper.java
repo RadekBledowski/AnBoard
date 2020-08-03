@@ -27,7 +27,6 @@ import android.os.RemoteException;
 import android.text.TextUtils;
 import android.util.Log;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.dictionarypack.DictionaryPackConstants;
 import com.android.inputmethod.dictionarypack.MD5Calculator;
 import com.android.inputmethod.dictionarypack.UpdateHandler;
@@ -52,6 +51,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * Group class for static methods to help with creation and getting of the binary dictionary

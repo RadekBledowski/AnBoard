@@ -26,10 +26,11 @@ import android.util.TypedValue;
 import android.view.Gravity;
 import android.widget.TextView;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.Key;
 
 import java.util.HashSet;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * The pop up key preview view.

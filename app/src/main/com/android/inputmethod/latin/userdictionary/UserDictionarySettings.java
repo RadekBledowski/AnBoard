@@ -38,9 +38,9 @@ import android.widget.SectionIndexer;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
-import AOSP.KEYBOARD.R;
-
 import java.util.Locale;
+
+import pl.rkbdi.anboard.R;
 
 // Caveat: This class is basically taken from
 // packages/apps/Settings/src/com/android/settings/inputmethod/UserDictionarySettings.java

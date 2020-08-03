@@ -35,7 +35,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.compat.TextViewCompatUtils;
 import com.android.inputmethod.compat.ViewCompatUtils;
 import com.android.inputmethod.latin.settings.SettingsActivity;
@@ -45,6 +44,8 @@ import com.android.inputmethod.latin.utils.UncachedInputMethodManagerUtils;
 import java.util.ArrayList;
 
 import javax.annotation.Nonnull;
+
+import pl.rkbdi.anboard.R;
 
 // TODO: Use Fragment to implement welcome screen and setup steps.
 public final class SetupWizardActivity extends Activity implements View.OnClickListener {

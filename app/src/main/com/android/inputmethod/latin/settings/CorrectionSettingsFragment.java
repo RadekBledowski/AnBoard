@@ -29,7 +29,6 @@ import android.preference.Preference;
 import android.preference.SwitchPreference;
 import android.text.TextUtils;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.dictionarypack.DictionarySettingsActivity;
 import com.android.inputmethod.latin.permissions.PermissionsManager;
 import com.android.inputmethod.latin.permissions.PermissionsUtil;
@@ -37,6 +36,8 @@ import com.android.inputmethod.latin.userdictionary.UserDictionaryList;
 import com.android.inputmethod.latin.userdictionary.UserDictionarySettings;
 
 import java.util.TreeSet;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * "Text correction" settings sub screen.

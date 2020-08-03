@@ -25,7 +25,6 @@ import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.BinaryDictionaryFileDumper;
 import com.android.inputmethod.latin.common.LocaleUtils;
 
@@ -36,6 +35,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import javax.annotation.Nonnull;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * Service that handles background tasks for the dictionary provider.

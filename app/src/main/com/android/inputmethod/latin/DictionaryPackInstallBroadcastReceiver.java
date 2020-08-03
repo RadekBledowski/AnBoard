@@ -25,9 +25,10 @@ import android.content.pm.ProviderInfo;
 import android.net.Uri;
 import android.util.Log;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.dictionarypack.DictionaryPackConstants;
 import com.android.inputmethod.latin.utils.TargetPackageInfoGetterTask;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * Receives broadcasts pertaining to dictionary management and takes the appropriate action.

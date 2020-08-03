@@ -21,7 +21,6 @@ import android.util.Log;
 import android.util.Pair;
 import android.view.KeyEvent;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.KeyboardSwitcher;
 import com.android.inputmethod.latin.settings.Settings;
 
@@ -30,6 +29,8 @@ import java.util.HashSet;
 import java.util.List;
 
 import javax.annotation.Nonnull;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * A class for detecting Emoji-Alt physical key.

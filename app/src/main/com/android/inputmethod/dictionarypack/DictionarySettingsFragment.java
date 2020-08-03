@@ -41,13 +41,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.common.LocaleUtils;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Locale;
 import java.util.TreeMap;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * Preference screen.

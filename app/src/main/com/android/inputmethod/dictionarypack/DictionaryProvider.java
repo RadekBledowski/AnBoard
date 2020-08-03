@@ -30,7 +30,6 @@ import android.os.ParcelFileDescriptor;
 import android.text.TextUtils;
 import android.util.Log;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.common.LocaleUtils;
 import com.android.inputmethod.latin.utils.DebugLogUtils;
 
@@ -40,9 +39,11 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 
+import pl.rkbdi.anboard.R;
+
 /**
  * Provider for dictionaries.
- *
+ * <p>
  * This class is a ContentProvider exposing all available dictionary data as managed by
  * the dictionary pack.
  */

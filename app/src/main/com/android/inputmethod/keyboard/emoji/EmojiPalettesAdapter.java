@@ -16,17 +16,19 @@
 
 package com.android.inputmethod.keyboard.emoji;
 
-import androidx.viewpager.widget.PagerAdapter;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import AOSP.KEYBOARD.R;
+import androidx.viewpager.widget.PagerAdapter;
+
 import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.Keyboard;
 import com.android.inputmethod.keyboard.KeyboardView;
+
+import pl.rkbdi.anboard.R;
 
 final class EmojiPalettesAdapter extends PagerAdapter {
     private static final String TAG = EmojiPalettesAdapter.class.getSimpleName();

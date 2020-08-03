@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.PatternSyntaxException;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 public final class ResourceUtils {
     private static final String TAG = ResourceUtils.class.getSimpleName();

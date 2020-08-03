@@ -45,7 +45,7 @@ import java.util.ArrayList;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 public final class PointerTracker implements PointerTrackerQueue.Element,
         BatchInputArbiterListener {

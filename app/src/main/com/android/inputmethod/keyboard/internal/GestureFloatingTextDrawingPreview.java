@@ -24,12 +24,13 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.text.TextUtils;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.PointerTracker;
 import com.android.inputmethod.latin.SuggestedWords;
 import com.android.inputmethod.latin.common.CoordinateUtils;
 
 import javax.annotation.Nonnull;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * The class for single gesture preview text. The class for multiple gesture preview text will be

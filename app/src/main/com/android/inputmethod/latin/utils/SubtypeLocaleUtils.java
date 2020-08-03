@@ -22,7 +22,6 @@ import android.os.Build;
 import android.util.Log;
 import android.view.inputmethod.InputMethodSubtype;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.common.LocaleUtils;
 import com.android.inputmethod.latin.common.StringUtils;
 
@@ -31,6 +30,8 @@ import java.util.Locale;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+
+import pl.rkbdi.anboard.R;
 
 import static com.android.inputmethod.latin.common.Constants.Subtype.ExtraValue.COMBINING_RULES;
 import static com.android.inputmethod.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET;

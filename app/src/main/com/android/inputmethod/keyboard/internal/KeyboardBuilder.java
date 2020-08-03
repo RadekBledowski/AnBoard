@@ -47,7 +47,7 @@ import java.util.Locale;
 
 import javax.annotation.Nonnull;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 /**
  * Keyboard Building helper.

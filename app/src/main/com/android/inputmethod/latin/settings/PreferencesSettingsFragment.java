@@ -23,9 +23,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.Preference;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.AudioAndHapticFeedbackManager;
 import com.android.inputmethod.latin.RichInputMethodManager;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * "Preferences" settings sub screen.

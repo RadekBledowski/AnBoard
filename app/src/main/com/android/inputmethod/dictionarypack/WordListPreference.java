@@ -26,13 +26,13 @@ import android.view.ViewParent;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import AOSP.KEYBOARD.R;
-
 import java.util.Locale;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * A preference for one word list.
- *
+ * <p>
  * This preference refers to a single word list, as available in the dictionary
  * pack. Upon being pressed, it displays a menu to allow the user to install, disable,
  * enable or delete it as appropriate for the current state of the word list.

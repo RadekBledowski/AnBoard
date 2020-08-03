@@ -27,7 +27,7 @@ import com.android.inputmethod.keyboard.KeyboardLayoutSet;
 import com.android.inputmethod.latin.AudioAndHapticFeedbackManager;
 import com.android.inputmethod.latin.SystemBroadcastReceiver;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 /**
  * "Advanced" settings sub screen.

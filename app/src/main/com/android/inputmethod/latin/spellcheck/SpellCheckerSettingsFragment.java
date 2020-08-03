@@ -23,12 +23,13 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.text.TextUtils;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.permissions.PermissionsManager;
 import com.android.inputmethod.latin.permissions.PermissionsUtil;
 import com.android.inputmethod.latin.settings.SubScreenFragment;
 import com.android.inputmethod.latin.settings.TwoStatePreferenceHelper;
 import com.android.inputmethod.latin.utils.ApplicationUtils;
+
+import pl.rkbdi.anboard.R;
 
 import static com.android.inputmethod.latin.permissions.PermissionsManager.get;
 

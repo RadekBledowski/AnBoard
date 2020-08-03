@@ -20,11 +20,12 @@ import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.util.SparseIntArray;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.utils.ResourceUtils;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+
+import pl.rkbdi.anboard.R;
 
 public final class KeyVisualAttributes {
     @Nullable

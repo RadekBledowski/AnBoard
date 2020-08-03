@@ -20,7 +20,6 @@ import android.os.Build;
 import android.util.Log;
 import android.view.inputmethod.InputMethodSubtype;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.compat.BuildCompatUtils;
 import com.android.inputmethod.compat.InputMethodSubtypeCompatUtils;
 import com.android.inputmethod.latin.common.Constants;
@@ -32,6 +31,8 @@ import java.util.Locale;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+
+import pl.rkbdi.anboard.R;
 
 import static com.android.inputmethod.latin.common.Constants.Subtype.KEYBOARD_MODE;
 

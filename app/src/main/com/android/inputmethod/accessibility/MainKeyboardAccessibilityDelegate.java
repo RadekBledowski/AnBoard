@@ -23,7 +23,6 @@ import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.MotionEvent;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.KeyDetector;
 import com.android.inputmethod.keyboard.Keyboard;
@@ -31,6 +30,8 @@ import com.android.inputmethod.keyboard.KeyboardId;
 import com.android.inputmethod.keyboard.MainKeyboardView;
 import com.android.inputmethod.keyboard.PointerTracker;
 import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * This class represents a delegate that can be registered in {@link MainKeyboardView} to enhance

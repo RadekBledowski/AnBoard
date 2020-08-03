@@ -24,12 +24,13 @@ import android.provider.Settings.SettingNotFoundException;
 import android.text.TextUtils;
 import android.util.Log;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.annotations.UsedForTesting;
 import com.android.inputmethod.latin.permissions.PermissionsUtil;
 import com.android.inputmethod.latin.settings.SettingsValues;
 
 import java.util.concurrent.TimeUnit;
+
+import pl.rkbdi.anboard.R;
 
 public final class ImportantNoticeUtils {
     private static final String TAG = ImportantNoticeUtils.class.getSimpleName();

@@ -50,7 +50,7 @@ import java.util.HashMap;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 import static com.android.inputmethod.latin.common.Constants.ImeOption.FORCE_ASCII;
 import static com.android.inputmethod.latin.common.Constants.ImeOption.NO_SETTINGS_KEY;

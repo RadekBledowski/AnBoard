@@ -22,7 +22,6 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.internal.KeyDrawParams;
 import com.android.inputmethod.keyboard.internal.KeySpecParser;
 import com.android.inputmethod.keyboard.internal.KeyStyle;
@@ -39,6 +38,8 @@ import java.util.Locale;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+
+import pl.rkbdi.anboard.R;
 
 import static com.android.inputmethod.keyboard.internal.KeyboardIconsSet.ICON_UNDEFINED;
 import static com.android.inputmethod.latin.common.Constants.CODE_OUTPUT_TEXT;

@@ -35,7 +35,6 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.compat.NotificationCompatUtils;
 import com.android.inputmethod.latin.common.LocaleUtils;
 import com.android.inputmethod.latin.makedict.FormatSpec;
@@ -60,9 +59,11 @@ import java.util.TreeSet;
 
 import javax.annotation.Nullable;
 
+import pl.rkbdi.anboard.R;
+
 /**
  * Handler for the update process.
- *
+ * <p>
  * This class is in charge of coordinating the update process for the various dictionaries
  * stored in the dictionary pack.
  */

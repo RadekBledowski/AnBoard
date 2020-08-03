@@ -21,13 +21,14 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.inputmethod.InputMethodSubtype;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.annotations.UsedForTesting;
 import com.android.inputmethod.compat.InputMethodSubtypeCompatUtils;
 import com.android.inputmethod.latin.common.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import pl.rkbdi.anboard.R;
 
 import static com.android.inputmethod.latin.common.Constants.Subtype.ExtraValue.ASCII_CAPABLE;
 import static com.android.inputmethod.latin.common.Constants.Subtype.ExtraValue.EMOJI_CAPABLE;

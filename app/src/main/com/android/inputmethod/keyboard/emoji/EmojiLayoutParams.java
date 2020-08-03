@@ -17,12 +17,14 @@
 package com.android.inputmethod.keyboard.emoji;
 
 import android.content.res.Resources;
-import androidx.viewpager.widget.ViewPager;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import AOSP.KEYBOARD.R;
+import androidx.viewpager.widget.ViewPager;
+
 import com.android.inputmethod.latin.utils.ResourceUtils;
+
+import pl.rkbdi.anboard.R;
 
 final class EmojiLayoutParams {
     private static final int DEFAULT_KEYBOARD_ROWS = 4;

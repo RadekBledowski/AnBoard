@@ -27,7 +27,7 @@ import com.android.inputmethod.compat.BuildCompatUtils;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 public final class KeyboardTheme implements Comparable<KeyboardTheme> {
     private static final String TAG = KeyboardTheme.class.getSimpleName();

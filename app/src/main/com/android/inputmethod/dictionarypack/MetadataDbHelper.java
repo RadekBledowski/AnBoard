@@ -25,7 +25,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.text.TextUtils;
 import android.util.Log;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.utils.DebugLogUtils;
 
 import java.io.File;
@@ -35,6 +34,8 @@ import java.util.List;
 import java.util.TreeMap;
 
 import javax.annotation.Nullable;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * Various helper functions for the state database

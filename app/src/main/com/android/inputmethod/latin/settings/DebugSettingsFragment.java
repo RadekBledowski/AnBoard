@@ -27,7 +27,6 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceGroup;
 import android.preference.TwoStatePreference;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.DictionaryDumpBroadcastReceiver;
 import com.android.inputmethod.latin.DictionaryFacilitatorImpl;
 import com.android.inputmethod.latin.utils.ApplicationUtils;
@@ -35,9 +34,11 @@ import com.android.inputmethod.latin.utils.ResourceUtils;
 
 import java.util.Locale;
 
+import pl.rkbdi.anboard.R;
+
 /**
  * "Debug mode" settings sub screen.
- *
+ * <p>
  * This settings sub screen handles a several preference options for debugging.
  */
 public final class DebugSettingsFragment extends SubScreenFragment

@@ -23,13 +23,14 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.accessibility.AccessibilityEvent;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.accessibility.AccessibilityUtils;
 import com.android.inputmethod.accessibility.KeyboardAccessibilityDelegate;
 import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.KeyDetector;
 import com.android.inputmethod.keyboard.Keyboard;
 import com.android.inputmethod.keyboard.KeyboardView;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * This is an extended {@link KeyboardView} class that hosts an emoji page keyboard.

@@ -31,7 +31,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.compat.InputMethodSubtypeCompatUtils;
 import com.android.inputmethod.compat.ViewCompatUtils;
 import com.android.inputmethod.latin.RichInputMethodManager;
@@ -40,14 +39,19 @@ import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
 
 import java.util.TreeSet;
 
+import pl.rkbdi.anboard.R;
+
 final class CustomInputStylePreference extends DialogPreference
         implements DialogInterface.OnCancelListener {
     private static final boolean DEBUG_SUBTYPE_ID = false;
 
     interface Listener {
         public void onRemoveCustomInputStyle(CustomInputStylePreference stylePref);
+
         public void onSaveCustomInputStyle(CustomInputStylePreference stylePref);
+
         public void onAddCustomInputStyle(CustomInputStylePreference stylePref);
+
         public SubtypeLocaleAdapter getSubtypeLocaleAdapter();
         public KeyboardLayoutSetAdapter getKeyboardLayoutSetAdapter();
     }

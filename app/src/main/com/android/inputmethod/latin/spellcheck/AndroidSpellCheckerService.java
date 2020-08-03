@@ -25,7 +25,6 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodSubtype;
 import android.view.textservice.SuggestionsInfo;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.Keyboard;
 import com.android.inputmethod.keyboard.KeyboardId;
 import com.android.inputmethod.keyboard.KeyboardLayoutSet;
@@ -46,6 +45,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Semaphore;
 
 import javax.annotation.Nonnull;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * Service for spell checking, using LatinIME's dictionaries and mechanisms.

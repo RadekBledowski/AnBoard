@@ -25,7 +25,6 @@ import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Log;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.BinaryDictionaryFileDumper;
 import com.android.inputmethod.latin.common.LocaleUtils;
 import com.android.inputmethod.latin.utils.ApplicationUtils;
@@ -34,9 +33,11 @@ import com.android.inputmethod.latin.utils.DebugLogUtils;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import pl.rkbdi.anboard.R;
+
 /**
  * Object representing an upgrade from one state to another.
- *
+ * <p>
  * This implementation basically encapsulates a list of Runnable objects. In the future
  * it may manage dependencies between them. Concretely, it does not use Runnable because the
  * actions need an argument.

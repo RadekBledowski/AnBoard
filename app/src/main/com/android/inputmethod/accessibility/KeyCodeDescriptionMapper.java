@@ -23,7 +23,6 @@ import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.inputmethod.EditorInfo;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.Keyboard;
 import com.android.inputmethod.keyboard.KeyboardId;
@@ -31,6 +30,8 @@ import com.android.inputmethod.latin.common.Constants;
 import com.android.inputmethod.latin.common.StringUtils;
 
 import java.util.Locale;
+
+import pl.rkbdi.anboard.R;
 
 final class KeyCodeDescriptionMapper {
     private static final String TAG = KeyCodeDescriptionMapper.class.getSimpleName();

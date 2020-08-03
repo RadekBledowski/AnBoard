@@ -19,7 +19,7 @@ package com.android.inputmethod.latin.utils;
 import android.content.Context;
 import android.view.ContextThemeWrapper;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 public final class DialogUtils {
     private DialogUtils() {

@@ -19,10 +19,11 @@ package com.android.inputmethod.latin.userdictionary;
 import android.content.Context;
 import android.text.TextUtils;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.common.LocaleUtils;
 
 import java.util.Locale;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * Utilities of the user dictionary settings

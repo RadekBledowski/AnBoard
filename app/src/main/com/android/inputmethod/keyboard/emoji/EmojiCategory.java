@@ -25,7 +25,6 @@ import android.os.Build;
 import android.util.Log;
 import android.util.Pair;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.compat.BuildCompatUtils;
 import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.Keyboard;
@@ -39,6 +38,8 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
+
+import pl.rkbdi.anboard.R;
 
 final class EmojiCategory {
     private final String TAG = EmojiCategory.class.getSimpleName();

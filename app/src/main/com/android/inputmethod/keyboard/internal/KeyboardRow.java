@@ -20,7 +20,6 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.util.Xml;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.Keyboard;
 import com.android.inputmethod.latin.utils.ResourceUtils;
@@ -28,6 +27,8 @@ import com.android.inputmethod.latin.utils.ResourceUtils;
 import org.xmlpull.v1.XmlPullParser;
 
 import java.util.ArrayDeque;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * Container for keys in the keyboard. All keys in a row are at the same Y-coordinate.

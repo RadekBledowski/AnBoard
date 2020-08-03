@@ -18,8 +18,9 @@ package com.android.inputmethod.keyboard.internal;
 
 import android.content.res.TypedArray;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.latin.utils.ResourceUtils;
+
+import pl.rkbdi.anboard.R;
 
 /**
  * This class holds parameters to control how a gesture stroke is sampled and recognized.

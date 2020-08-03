@@ -20,8 +20,9 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.Key;
+
+import pl.rkbdi.anboard.R;
 
 // Handling long press timer to show a more keys keyboard.
 final class AccessibilityLongPressTimer extends Handler {

@@ -21,7 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 public class DictionaryDumpBroadcastReceiver extends BroadcastReceiver {
   private static final String TAG = DictionaryDumpBroadcastReceiver.class.getSimpleName();

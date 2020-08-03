@@ -18,7 +18,7 @@ package com.android.inputmethod.dictionarypack;
 
 import android.content.Context;
 
-import AOSP.KEYBOARD.R;
+import pl.rkbdi.anboard.R;
 
 /**
  * A class to group constants for dictionary pack usage.

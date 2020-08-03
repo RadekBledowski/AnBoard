@@ -19,7 +19,6 @@ package com.android.inputmethod.keyboard;
 import android.content.Context;
 import android.graphics.Paint;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.annotations.UsedForTesting;
 import com.android.inputmethod.keyboard.internal.KeyboardBuilder;
 import com.android.inputmethod.keyboard.internal.KeyboardParams;
@@ -28,6 +27,8 @@ import com.android.inputmethod.latin.common.StringUtils;
 import com.android.inputmethod.latin.utils.TypefaceUtils;
 
 import javax.annotation.Nonnull;
+
+import pl.rkbdi.anboard.R;
 
 public final class MoreKeysKeyboard extends Keyboard {
     private final int mDefaultKeyCoordX;

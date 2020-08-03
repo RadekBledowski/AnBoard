@@ -32,7 +32,6 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.keyboard.internal.KeyDrawParams;
 import com.android.inputmethod.keyboard.internal.KeyVisualAttributes;
 import com.android.inputmethod.latin.common.Constants;
@@ -42,6 +41,8 @@ import java.util.HashSet;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+
+import AOSP.KEYBOARD.R;
 
 /**
  * A view that renders a virtual {@link Keyboard}.
@@ -337,9 +338,7 @@ public class KeyboardView extends View {
         if (!key.isSpacer()) {
             final Drawable background = key.selectBackgroundDrawable(
                     mKeyBackground, mFunctionalKeyBackground, mSpacebarBackground);
-            if (background != null) {
-                onDrawKeyBackground(key, canvas, background);
-            }
+            onDrawKeyBackground(key, canvas, background);
         }
         onDrawKeyTopVisuals(key, canvas, paint, params);
 

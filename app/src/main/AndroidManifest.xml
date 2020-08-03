@@ -35,8 +35,8 @@
     <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
 
     <application android:label="@string/english_ime_name"
-                 android:icon="@drawable/ic_launcher_keyboard"
-                 android:supportsRtl="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
                  android:allowBackup="true">
 
         <!-- Services -->
@@ -66,9 +66,9 @@
         <!-- Activities -->
         <activity android:name="com.android.inputmethod.latin.setup.SetupActivity"
                   android:theme="@style/platformActivityTheme"
-                  android:label="@string/english_ime_name"
-                  android:icon="@drawable/ic_launcher_keyboard"
-                  android:launchMode="singleTask"
+            android:label="@string/english_ime_name"
+            android:icon="@mipmap/ic_launcher"
+            android:launchMode="singleTask"
                   android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

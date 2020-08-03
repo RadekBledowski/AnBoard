@@ -579,5 +579,12 @@ Tip: You can download and remove dictionaries by going to &lt;b>Languages&#160;&
     <string name="user_dict_fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
 
     <string name="zibil">zibil</string>
+    <string name="language_switch_key">Language switch key</string>
+    <string name="space_swipe">Space swipe cursor move</string>
+    <string name="space_swipe_desc">Swipe left and right over the spacebar to move the cursor</string>
+    <string name="delete_swipe">Delete swipe</string>
+    <string name="delete_swipe_desc">Swipe left and hold from the backspace key to delete text</string>
+    <string name="hide_special_chars">Hide special characters</string>
+    <string name="show_number_row">Show separate number row</string>
 
 </resources>

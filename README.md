@@ -1,12 +1,11 @@
-# future development and support was stopped
+# AnBoard
 
 ### Known issues 
-* suggestion bar not showing
-* no support for android 9 and newer
+* Navigation bar color is not applying on pre-pie devices
 
-### AOSP Kayboard 7.1.2 for Android Studio
-Full functional AOSP Keyboard with glide typing
-
-included libjni_latinimegoogle.so for glide typing
-
-__NDK BUILD IS DISABLED BY DEFAULT__
+### Features 
+* Glide typing
+* Smooth looking UI with lots of customization
+* Spacebar cursor movement
+* Backspace swipe delete
+* Support for incognito mode (Does not learn when you are incognito)

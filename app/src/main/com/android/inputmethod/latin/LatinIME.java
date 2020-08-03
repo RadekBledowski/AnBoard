@@ -36,6 +36,7 @@ import android.os.IBinder;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.text.InputType;
+import android.text.TextUtils;
 import android.util.Log;
 import android.util.PrintWriterPrinter;
 import android.util.Printer;
@@ -1370,6 +1371,45 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         return false;
     }
 
+    @Override
+    public void onMovePointer(int steps) {
+        if (mInputLogic.mConnection.hasCursorPosition()) {
+            if (TextUtils.getLayoutDirectionFromLocale(mSettings.getCurrent().mLocale) == View.LAYOUT_DIRECTION_RTL)
+                steps = -steps;
+
+            final int end = mInputLogic.mConnection.getExpectedSelectionEnd() + steps;
+            final int start = mInputLogic.mConnection.hasSelection() ? mInputLogic.mConnection.getExpectedSelectionStart() : end;
+            mInputLogic.mConnection.setSelection(start, end);
+        } else {
+            for (; steps < 0; steps++)
+                mInputLogic.sendDownUpKeyEvent(KeyEvent.KEYCODE_DPAD_LEFT);
+            for (; steps > 0; steps--)
+                mInputLogic.sendDownUpKeyEvent(KeyEvent.KEYCODE_DPAD_RIGHT);
+        }
+    }
+
+    @Override
+    public void onMoveDeletePointer(int steps) {
+        if (mInputLogic.mConnection.hasCursorPosition()) {
+            final int end = mInputLogic.mConnection.getExpectedSelectionEnd();
+            final int start = mInputLogic.mConnection.getExpectedSelectionStart() + steps;
+            if (start > end)
+                return;
+            mInputLogic.mConnection.setSelection(start, end);
+        } else {
+            for (; steps < 0; steps++)
+                mInputLogic.sendDownUpKeyEvent(KeyEvent.KEYCODE_DEL);
+        }
+    }
+
+    @Override
+    public void onUpWithDeletePointerActive() {
+        if (mInputLogic.mConnection.hasSelection()) {
+            mInputLogic.sendDownUpKeyEvent(KeyEvent.KEYCODE_DEL);
+            mInputLogic.finishInput();
+        }
+    }
+
     private boolean isShowingOptionDialog() {
         return mOptionsDialog != null && mOptionsDialog.isShowing();
     }
@@ -1956,7 +1996,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         if (token == null) {
             return fallbackValue;
         }
-        return mRichImm.shouldOfferSwitchingToNextInputMethod(token, fallbackValue);
+        return mSettings.getCurrent().isLanguageSwitchKeyEnabled();
     }
 
     private void setNavigationBarVisibility(final boolean visible) {

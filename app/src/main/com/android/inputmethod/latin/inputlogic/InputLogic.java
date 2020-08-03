@@ -1962,14 +1962,14 @@ public final class InputLogic {
 
     /**
      * Sends a DOWN key event followed by an UP key event to the editor.
-     *
+     * <p>
      * If possible at all, avoid using this method. It causes all sorts of race conditions with
      * the text view because it goes through a different, asynchronous binder. Also, batch edits
      * are ignored for key events. Use the normal software input methods instead.
      *
      * @param keyCode the key code to send inside the key event.
      */
-    private void sendDownUpKeyEvent(final int keyCode) {
+    public void sendDownUpKeyEvent(final int keyCode) {
         final long eventTime = SystemClock.uptimeMillis();
         mConnection.sendKeyEvent(new KeyEvent(eventTime, eventTime,
                 KeyEvent.ACTION_DOWN, keyCode, 0, 0, KeyCharacterMap.VIRTUAL_KEYBOARD, 0,

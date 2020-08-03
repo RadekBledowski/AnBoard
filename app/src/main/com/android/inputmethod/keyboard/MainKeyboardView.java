@@ -22,20 +22,25 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
+import android.graphics.Path;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
 import android.graphics.Typeface;
 import android.preference.PreferenceManager;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.accessibility.AccessibilityUtils;
 import com.android.inputmethod.accessibility.MainKeyboardAccessibilityDelegate;
 import com.android.inputmethod.annotations.ExternallyReferenced;
@@ -63,6 +68,8 @@ import java.util.WeakHashMap;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+
+import AOSP.KEYBOARD.R;
 
 /**
  * A view that is responsible for detecting key presses and touch movements.
@@ -169,109 +176,16 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
 
     private MainKeyboardAccessibilityDelegate mAccessibilityDelegate;
 
-    public MainKeyboardView(final Context context, final AttributeSet attrs) {
-        this(context, attrs, R.attr.mainKeyboardViewStyle);
-    }
+    /**
+     * ROUNDED CORNERS
+     *
+     * @param context
+     * @param attrs
+     * @param defStyle
+     */
 
-    public MainKeyboardView(final Context context, final AttributeSet attrs, final int defStyle) {
-        super(context, attrs, defStyle);
-
-        final DrawingPreviewPlacerView drawingPreviewPlacerView =
-                new DrawingPreviewPlacerView(context, attrs);
-
-        final TypedArray mainKeyboardViewAttr = context.obtainStyledAttributes(
-                attrs, R.styleable.MainKeyboardView, defStyle, R.style.MainKeyboardView);
-        final int ignoreAltCodeKeyTimeout = mainKeyboardViewAttr.getInt(
-                R.styleable.MainKeyboardView_ignoreAltCodeKeyTimeout, 0);
-        final int gestureRecognitionUpdateTime = mainKeyboardViewAttr.getInt(
-                R.styleable.MainKeyboardView_gestureRecognitionUpdateTime, 0);
-        mTimerHandler = new TimerHandler(
-                this, ignoreAltCodeKeyTimeout, gestureRecognitionUpdateTime);
-
-        final float keyHysteresisDistance = mainKeyboardViewAttr.getDimension(
-                R.styleable.MainKeyboardView_keyHysteresisDistance, 0.0f);
-        final float keyHysteresisDistanceForSlidingModifier = mainKeyboardViewAttr.getDimension(
-                R.styleable.MainKeyboardView_keyHysteresisDistanceForSlidingModifier, 0.0f);
-        mKeyDetector = new KeyDetector(
-                keyHysteresisDistance, keyHysteresisDistanceForSlidingModifier);
-
-        PointerTracker.init(mainKeyboardViewAttr, mTimerHandler, this /* DrawingProxy */);
-
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        final boolean forceNonDistinctMultitouch = prefs.getBoolean(
-                DebugSettings.PREF_FORCE_NON_DISTINCT_MULTITOUCH, false);
-        final boolean hasDistinctMultitouch = context.getPackageManager()
-                .hasSystemFeature(PackageManager.FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT)
-                && !forceNonDistinctMultitouch;
-        mNonDistinctMultitouchHelper = hasDistinctMultitouch ? null
-                : new NonDistinctMultitouchHelper();
-
-        final int backgroundDimAlpha = mainKeyboardViewAttr.getInt(
-                R.styleable.MainKeyboardView_backgroundDimAlpha, 0);
-        mBackgroundDimAlphaPaint.setColor(Color.BLACK);
-        mBackgroundDimAlphaPaint.setAlpha(backgroundDimAlpha);
-        mLanguageOnSpacebarTextRatio = mainKeyboardViewAttr.getFraction(
-                R.styleable.MainKeyboardView_languageOnSpacebarTextRatio, 1, 1, 1.0f);
-        mLanguageOnSpacebarTextColor = mainKeyboardViewAttr.getColor(
-                R.styleable.MainKeyboardView_languageOnSpacebarTextColor, 0);
-        mLanguageOnSpacebarTextShadowRadius = mainKeyboardViewAttr.getFloat(
-                R.styleable.MainKeyboardView_languageOnSpacebarTextShadowRadius,
-                LANGUAGE_ON_SPACEBAR_TEXT_SHADOW_RADIUS_DISABLED);
-        mLanguageOnSpacebarTextShadowColor = mainKeyboardViewAttr.getColor(
-                R.styleable.MainKeyboardView_languageOnSpacebarTextShadowColor, 0);
-        mLanguageOnSpacebarFinalAlpha = mainKeyboardViewAttr.getInt(
-                R.styleable.MainKeyboardView_languageOnSpacebarFinalAlpha,
-                Constants.Color.ALPHA_OPAQUE);
-        final int languageOnSpacebarFadeoutAnimatorResId = mainKeyboardViewAttr.getResourceId(
-                R.styleable.MainKeyboardView_languageOnSpacebarFadeoutAnimator, 0);
-        final int altCodeKeyWhileTypingFadeoutAnimatorResId = mainKeyboardViewAttr.getResourceId(
-                R.styleable.MainKeyboardView_altCodeKeyWhileTypingFadeoutAnimator, 0);
-        final int altCodeKeyWhileTypingFadeinAnimatorResId = mainKeyboardViewAttr.getResourceId(
-                R.styleable.MainKeyboardView_altCodeKeyWhileTypingFadeinAnimator, 0);
-
-        mKeyPreviewDrawParams = new KeyPreviewDrawParams(mainKeyboardViewAttr);
-        mKeyPreviewChoreographer = new KeyPreviewChoreographer(mKeyPreviewDrawParams);
-
-        final int moreKeysKeyboardLayoutId = mainKeyboardViewAttr.getResourceId(
-                R.styleable.MainKeyboardView_moreKeysKeyboardLayout, 0);
-        final int moreKeysKeyboardForActionLayoutId = mainKeyboardViewAttr.getResourceId(
-                R.styleable.MainKeyboardView_moreKeysKeyboardForActionLayout,
-                moreKeysKeyboardLayoutId);
-        mConfigShowMoreKeysKeyboardAtTouchedPoint = mainKeyboardViewAttr.getBoolean(
-                R.styleable.MainKeyboardView_showMoreKeysKeyboardAtTouchedPoint, false);
-
-        mGestureFloatingPreviewTextLingerTimeout = mainKeyboardViewAttr.getInt(
-                R.styleable.MainKeyboardView_gestureFloatingPreviewTextLingerTimeout, 0);
-
-        mGestureFloatingTextDrawingPreview = new GestureFloatingTextDrawingPreview(
-                mainKeyboardViewAttr);
-        mGestureFloatingTextDrawingPreview.setDrawingView(drawingPreviewPlacerView);
-
-        mGestureTrailsDrawingPreview = new GestureTrailsDrawingPreview(mainKeyboardViewAttr);
-        mGestureTrailsDrawingPreview.setDrawingView(drawingPreviewPlacerView);
-
-        mSlidingKeyInputDrawingPreview = new SlidingKeyInputDrawingPreview(mainKeyboardViewAttr);
-        mSlidingKeyInputDrawingPreview.setDrawingView(drawingPreviewPlacerView);
-        mainKeyboardViewAttr.recycle();
-
-        mDrawingPreviewPlacerView = drawingPreviewPlacerView;
-
-        final LayoutInflater inflater = LayoutInflater.from(getContext());
-        mMoreKeysKeyboardContainer = inflater.inflate(moreKeysKeyboardLayoutId, null);
-        mMoreKeysKeyboardForActionContainer = inflater.inflate(
-                moreKeysKeyboardForActionLayoutId, null);
-        mLanguageOnSpacebarFadeoutAnimator = loadObjectAnimator(
-                languageOnSpacebarFadeoutAnimatorResId, this);
-        mAltCodeKeyWhileTypingFadeoutAnimator = loadObjectAnimator(
-                altCodeKeyWhileTypingFadeoutAnimatorResId, this);
-        mAltCodeKeyWhileTypingFadeinAnimator = loadObjectAnimator(
-                altCodeKeyWhileTypingFadeinAnimatorResId, this);
-
-        mKeyboardActionListener = KeyboardActionListener.EMPTY_LISTENER;
-
-        mLanguageOnSpacebarHorizontalMargin = (int)getResources().getDimension(
-                R.dimen.config_language_on_spacebar_horizontal_margin);
-    }
+    private final static float CORNER_RADIUS = 15.0f;
+    private Bitmap maskBitmap;
 
     @Override
     public void setHardwareAcceleratedDrawingEnabled(final boolean enabled) {
@@ -889,5 +803,192 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
     public void deallocateMemory() {
         super.deallocateMemory();
         mDrawingPreviewPlacerView.deallocateMemory();
+    }
+
+    private Paint paint, maskPaint;
+    private float cornerRadius;
+
+    public MainKeyboardView(final Context context, final AttributeSet attrs) {
+        this(context, attrs, R.attr.mainKeyboardViewStyle);
+        initRoundedCorners(context);
+    }
+
+    public MainKeyboardView(final Context context, final AttributeSet attrs, final int defStyle) {
+        super(context, attrs, defStyle);
+        initRoundedCorners(context);
+
+        final DrawingPreviewPlacerView drawingPreviewPlacerView =
+                new DrawingPreviewPlacerView(context, attrs);
+
+        final TypedArray mainKeyboardViewAttr = context.obtainStyledAttributes(
+                attrs, R.styleable.MainKeyboardView, defStyle, R.style.MainKeyboardView);
+        final int ignoreAltCodeKeyTimeout = mainKeyboardViewAttr.getInt(
+                R.styleable.MainKeyboardView_ignoreAltCodeKeyTimeout, 0);
+        final int gestureRecognitionUpdateTime = mainKeyboardViewAttr.getInt(
+                R.styleable.MainKeyboardView_gestureRecognitionUpdateTime, 0);
+        mTimerHandler = new TimerHandler(
+                this, ignoreAltCodeKeyTimeout, gestureRecognitionUpdateTime);
+
+        final float keyHysteresisDistance = mainKeyboardViewAttr.getDimension(
+                R.styleable.MainKeyboardView_keyHysteresisDistance, 0.0f);
+        final float keyHysteresisDistanceForSlidingModifier = mainKeyboardViewAttr.getDimension(
+                R.styleable.MainKeyboardView_keyHysteresisDistanceForSlidingModifier, 0.0f);
+        mKeyDetector = new KeyDetector(
+                keyHysteresisDistance, keyHysteresisDistanceForSlidingModifier);
+
+        PointerTracker.init(mainKeyboardViewAttr, mTimerHandler, this /* DrawingProxy */);
+
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        final boolean forceNonDistinctMultitouch = prefs.getBoolean(
+                DebugSettings.PREF_FORCE_NON_DISTINCT_MULTITOUCH, false);
+        final boolean hasDistinctMultitouch = context.getPackageManager()
+                .hasSystemFeature(PackageManager.FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT)
+                && !forceNonDistinctMultitouch;
+        mNonDistinctMultitouchHelper = hasDistinctMultitouch ? null
+                : new NonDistinctMultitouchHelper();
+
+        final int backgroundDimAlpha = mainKeyboardViewAttr.getInt(
+                R.styleable.MainKeyboardView_backgroundDimAlpha, 0);
+        mBackgroundDimAlphaPaint.setColor(Color.BLACK);
+        mBackgroundDimAlphaPaint.setAlpha(backgroundDimAlpha);
+        mLanguageOnSpacebarTextRatio = mainKeyboardViewAttr.getFraction(
+                R.styleable.MainKeyboardView_languageOnSpacebarTextRatio, 1, 1, 1.0f);
+        mLanguageOnSpacebarTextColor = mainKeyboardViewAttr.getColor(
+                R.styleable.MainKeyboardView_languageOnSpacebarTextColor, 0);
+        mLanguageOnSpacebarTextShadowRadius = mainKeyboardViewAttr.getFloat(
+                R.styleable.MainKeyboardView_languageOnSpacebarTextShadowRadius,
+                LANGUAGE_ON_SPACEBAR_TEXT_SHADOW_RADIUS_DISABLED);
+        mLanguageOnSpacebarTextShadowColor = mainKeyboardViewAttr.getColor(
+                R.styleable.MainKeyboardView_languageOnSpacebarTextShadowColor, 0);
+        mLanguageOnSpacebarFinalAlpha = mainKeyboardViewAttr.getInt(
+                R.styleable.MainKeyboardView_languageOnSpacebarFinalAlpha,
+                Constants.Color.ALPHA_OPAQUE);
+        final int languageOnSpacebarFadeoutAnimatorResId = mainKeyboardViewAttr.getResourceId(
+                R.styleable.MainKeyboardView_languageOnSpacebarFadeoutAnimator, 0);
+        final int altCodeKeyWhileTypingFadeoutAnimatorResId = mainKeyboardViewAttr.getResourceId(
+                R.styleable.MainKeyboardView_altCodeKeyWhileTypingFadeoutAnimator, 0);
+        final int altCodeKeyWhileTypingFadeinAnimatorResId = mainKeyboardViewAttr.getResourceId(
+                R.styleable.MainKeyboardView_altCodeKeyWhileTypingFadeinAnimator, 0);
+
+        mKeyPreviewDrawParams = new KeyPreviewDrawParams(mainKeyboardViewAttr);
+        mKeyPreviewChoreographer = new KeyPreviewChoreographer(mKeyPreviewDrawParams);
+
+        final int moreKeysKeyboardLayoutId = mainKeyboardViewAttr.getResourceId(
+                R.styleable.MainKeyboardView_moreKeysKeyboardLayout, 0);
+        final int moreKeysKeyboardForActionLayoutId = mainKeyboardViewAttr.getResourceId(
+                R.styleable.MainKeyboardView_moreKeysKeyboardForActionLayout,
+                moreKeysKeyboardLayoutId);
+        mConfigShowMoreKeysKeyboardAtTouchedPoint = mainKeyboardViewAttr.getBoolean(
+                R.styleable.MainKeyboardView_showMoreKeysKeyboardAtTouchedPoint, false);
+
+        mGestureFloatingPreviewTextLingerTimeout = mainKeyboardViewAttr.getInt(
+                R.styleable.MainKeyboardView_gestureFloatingPreviewTextLingerTimeout, 0);
+
+        mGestureFloatingTextDrawingPreview = new GestureFloatingTextDrawingPreview(
+                mainKeyboardViewAttr);
+        mGestureFloatingTextDrawingPreview.setDrawingView(drawingPreviewPlacerView);
+
+        mGestureTrailsDrawingPreview = new GestureTrailsDrawingPreview(mainKeyboardViewAttr);
+        mGestureTrailsDrawingPreview.setDrawingView(drawingPreviewPlacerView);
+
+        mSlidingKeyInputDrawingPreview = new SlidingKeyInputDrawingPreview(mainKeyboardViewAttr);
+        mSlidingKeyInputDrawingPreview.setDrawingView(drawingPreviewPlacerView);
+        mainKeyboardViewAttr.recycle();
+
+        mDrawingPreviewPlacerView = drawingPreviewPlacerView;
+
+        final LayoutInflater inflater = LayoutInflater.from(getContext());
+        mMoreKeysKeyboardContainer = inflater.inflate(moreKeysKeyboardLayoutId, null);
+        mMoreKeysKeyboardForActionContainer = inflater.inflate(
+                moreKeysKeyboardForActionLayoutId, null);
+        mLanguageOnSpacebarFadeoutAnimator = loadObjectAnimator(
+                languageOnSpacebarFadeoutAnimatorResId, this);
+        mAltCodeKeyWhileTypingFadeoutAnimator = loadObjectAnimator(
+                altCodeKeyWhileTypingFadeoutAnimatorResId, this);
+        mAltCodeKeyWhileTypingFadeinAnimator = loadObjectAnimator(
+                altCodeKeyWhileTypingFadeinAnimatorResId, this);
+
+        mKeyboardActionListener = KeyboardActionListener.EMPTY_LISTENER;
+
+        mLanguageOnSpacebarHorizontalMargin = (int) getResources().getDimension(
+                R.dimen.config_language_on_spacebar_horizontal_margin);
+    }
+
+    static public Path RoundedRect(float left, float top, float right, float bottom, float rx, float ry, boolean conformToOriginalPost) {
+        Path path = new Path();
+        if (rx < 0) rx = 0;
+        if (ry < 0) ry = 0;
+        float width = right - left;
+        float height = bottom - top;
+        if (rx > width / 2) rx = width / 2;
+        if (ry > height / 2) ry = height / 2;
+        float widthMinusCorners = (width - (2 * rx));
+        float heightMinusCorners = (height - (2 * ry));
+
+        path.moveTo(right, top + ry);
+        path.rQuadTo(0, -ry, -rx, -ry);//top-right corner
+        path.rLineTo(-widthMinusCorners, 0);
+        path.rQuadTo(-rx, 0, -rx, ry); //top-left corner
+        path.rLineTo(0, heightMinusCorners);
+
+        if (conformToOriginalPost) {
+            path.rLineTo(0, ry);
+            path.rLineTo(width, 0);
+            path.rLineTo(0, -ry);
+        } else {
+            path.rQuadTo(0, ry, rx, ry);//bottom-left corner
+            path.rLineTo(widthMinusCorners, 0);
+            path.rQuadTo(rx, 0, rx, -ry); //bottom-right corner
+        }
+
+        path.rLineTo(0, -heightMinusCorners);
+
+        path.close();//Given close, last lineto can be removed.
+
+        return path;
+    }
+
+    private void initRoundedCorners(Context context) {
+        DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+        cornerRadius = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, CORNER_RADIUS, metrics);
+
+        paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
+        maskPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);
+        maskPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
+
+        setWillNotDraw(false);
+    }
+
+    @Override
+    public void draw(Canvas canvas) {
+        Bitmap offscreenBitmap = Bitmap.createBitmap(canvas.getWidth(), canvas.getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas offscreenCanvas = new Canvas(offscreenBitmap);
+
+        super.draw(offscreenCanvas);
+
+        if (maskBitmap == null) {
+            maskBitmap = createMask(canvas.getWidth(), canvas.getHeight());
+        }
+
+        offscreenCanvas.drawBitmap(maskBitmap, 0f, 0f, maskPaint);
+        canvas.drawBitmap(offscreenBitmap, 0f, 0f, paint);
+    }
+
+    private Bitmap createMask(int width, int height) {
+        Bitmap mask = Bitmap.createBitmap(width, height, Bitmap.Config.ALPHA_8);
+        Canvas canvas = new Canvas(mask);
+
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paint.setColor(Color.BLACK);
+
+        canvas.drawRect(0, 0, width, height, paint);
+
+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
+        Path path = RoundedRect(0, 0, width, height, cornerRadius, cornerRadius,
+                true);
+        canvas.drawPath(path, paint);
+
+        return mask;
     }
 }

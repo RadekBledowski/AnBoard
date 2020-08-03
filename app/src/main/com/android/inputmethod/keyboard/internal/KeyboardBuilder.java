@@ -27,7 +27,6 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.util.Xml;
 
-import AOSP.KEYBOARD.R;
 import com.android.inputmethod.annotations.UsedForTesting;
 import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.Keyboard;
@@ -47,6 +46,8 @@ import java.util.Arrays;
 import java.util.Locale;
 
 import javax.annotation.Nonnull;
+
+import AOSP.KEYBOARD.R;
 
 /**
  * Keyboard Building helper.
@@ -678,13 +679,17 @@ public class KeyboardBuilder<KP extends KeyboardParams> {
             final boolean countryCodeMatched = matchCountryCodes(caseAttr, locale);
             final boolean splitLayoutMatched = matchBoolean(caseAttr,
                     R.styleable.Keyboard_Case_isSplitLayout, id.mIsSplitLayout);
+            final boolean showMoreKeysMatched = matchBoolean(caseAttr,
+                    R.styleable.Keyboard_Case_showExtraChars, id.mShowMoreKeys);
+            final boolean showNumberRowMatched = matchBoolean(caseAttr,
+                    R.styleable.Keyboard_Case_showNumberRow, id.mShowNumberRow);
             final boolean selected = keyboardLayoutSetMatched && keyboardLayoutSetElementMatched
                     && keyboardThemeMacthed && modeMatched && navigateNextMatched
                     && navigatePreviousMatched && passwordInputMatched && clobberSettingsKeyMatched
-                    && hasShortcutKeyMatched  && languageSwitchKeyEnabledMatched
+                    && hasShortcutKeyMatched && languageSwitchKeyEnabledMatched
                     && isMultiLineMatched && imeActionMatched && isIconDefinedMatched
                     && localeCodeMatched && languageCodeMatched && countryCodeMatched
-                    && splitLayoutMatched;
+                    && showMoreKeysMatched && showNumberRowMatched && splitLayoutMatched;
 
             if (DEBUG) {
                 startTag("<%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s>%s", TAG_CASE,

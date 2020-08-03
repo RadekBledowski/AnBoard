@@ -625,6 +625,7 @@ public class PersonalDictionaryLookup implements Closeable {
                 // This lets the user create a shortcut from "gm" to "General Motors".
                 localeShortcuts.put(shortcut, rawDictWord);
             }
+            cursor.close();
         }
 
         List<DictionaryStats> stats = new ArrayList<>();

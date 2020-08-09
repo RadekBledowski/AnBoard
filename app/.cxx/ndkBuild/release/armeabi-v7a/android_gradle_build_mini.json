@@ -1,0 +1,26 @@
+{
+  "buildFiles": [
+    "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Android.mk",
+    "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Android.mk NDK_APPLICATION_MK\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003dY:/Projects/Github/RKBDI/AnBoard/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Android.mk NDK_APPLICATION_MK\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003dY:/Projects/Github/RKBDI/AnBoard/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\build\\intermediates\\ndkBuild\\release\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "jni_latinime-release-armeabi-v7a": {
+      "artifactName": "jni_latinime",
+      "buildCommand": "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Android.mk NDK_APPLICATION_MK\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003dY:/Projects/Github/RKBDI/AnBoard/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\build\\intermediates\\ndkBuild\\release\\lib Y:/Projects/Github/RKBDI/AnBoard/app/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libjni_latinime.so",
+      "abi": "armeabi-v7a",
+      "output": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libjni_latinime.so",
+      "runtimeFiles": []
+    },
+    "jni_latinime_common_static-release-armeabi-v7a": {
+      "artifactName": "jni_latinime_common_static",
+      "buildCommand": "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Android.mk NDK_APPLICATION_MK\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003dY:/Projects/Github/RKBDI/AnBoard/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dY:\\Projects\\Github\\RKBDI\\AnBoard\\app\\build\\intermediates\\ndkBuild\\release\\lib Y:/Projects/Github/RKBDI/AnBoard/app/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libjni_latinime_common_static.a",
+      "abi": "armeabi-v7a",
+      "output": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libjni_latinime_common_static.a",
+      "runtimeFiles": []
+    }
+  }
+}

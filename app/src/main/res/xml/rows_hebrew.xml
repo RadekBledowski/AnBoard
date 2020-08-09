@@ -18,26 +18,16 @@
 */
 -->
 
-<merge
-    xmlns:latin="http://schemas.android.com/apk/res-auto"
->
-    <Row
-        latin:keyWidth="10%p"
-    >
-        <include
-            latin:keyboardLayout="@xml/rowkeys_hebrew1" />
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <include latin:keyboardLayout="@xml/key_styles_common" />
+    <Row latin:keyWidth="10%p">
+        <include latin:keyboardLayout="@xml/rowkeys_hebrew1" />
     </Row>
-    <Row
-        latin:keyWidth="10%p"
-    >
-        <include
-            latin:keyboardLayout="@xml/rowkeys_hebrew2" />
+    <Row latin:keyWidth="10%p">
+        <include latin:keyboardLayout="@xml/rowkeys_hebrew2" />
     </Row>
-    <Row
-        latin:keyWidth="10%p"
-    >
-        <include
-            latin:keyboardLayout="@xml/rowkeys_hebrew3" />
+    <Row latin:keyWidth="10%p">
+        <include latin:keyboardLayout="@xml/rowkeys_hebrew3" />
         <Key
             latin:keyStyle="deleteKeyStyle"
             latin:keyWidth="fillRight" />

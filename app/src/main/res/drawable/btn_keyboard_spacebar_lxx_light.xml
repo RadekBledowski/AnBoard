@@ -15,6 +15,6 @@
 -->
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@drawable/drwbl_keyboard_spacebar_lxx_light_pressed" />
-    <item android:drawable="@drawable/drwbl_keyboard_spacebar_lxx_light" />
+    <item android:drawable="@drawable/btn_keyboard_spacebar_pressed_lxx_light" android:state_pressed="true" />
+    <item android:drawable="@drawable/btn_keyboard_spacebar_normal_lxx_light" />
 </selector>

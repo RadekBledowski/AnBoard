@@ -18,14 +18,12 @@
 */
 -->
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
->
-    <com.android.inputmethod.latin.suggestions.MoreSuggestionsView
-        xmlns:latin="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <pl.rkbdi.anboard.inputmethod.latin.suggestions.MoreSuggestionsView xmlns:latin="http://schemas.android.com/apk/res/pl.rkbdi.anboard.inputmethod.latin"
         android:id="@+id/more_suggestions_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

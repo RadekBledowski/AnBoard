@@ -55,35 +55,35 @@
         <item name="keyShiftedLetterHintActivatedColor">@color/key_text_color_lxx_light</item>
         <item name="keyPreviewTextColor">@color/key_text_color_lxx_light</item>
     </style>
-    <style
-        name="MainKeyboardView.LXX_Light"
-        parent="KeyboardView.LXX_Light"
-    >
-        <item name="moreKeysKeyboardForActionLayout">@layout/more_keys_keyboard_for_action_lxx</item>
+    <style name="MainKeyboardView.LXX_Light" parent="KeyboardView.LXX_Light">
+        <item name="moreKeysKeyboardForActionLayout">@layout/more_keys_keyboard_for_action_lxx
+        </item>
         <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_lxx_light</item>
         <item name="keyPreviewHeight">@dimen/config_key_preview_height_lxx</item>
         <item name="keyPreviewOffset">@dimen/config_key_preview_offset_lxx</item>
         <item name="keyPreviewShowUpAnimator">@anim/key_preview_show_up_lxx</item>
         <item name="keyPreviewDismissAnimator">@anim/key_preview_dismiss_lxx</item>
         <item name="gestureFloatingPreviewTextColor">@color/auto_correct_color_lxx_light</item>
-        <item name="gestureFloatingPreviewColor">@color/gesture_floating_preview_color_lxx_light</item>
+        <item name="gestureFloatingPreviewColor">@color/gesture_floating_preview_color_lxx_light
+        </item>
         <item name="gestureTrailColor">@color/gesture_trail_color_lxx_light</item>
-        <item name="slidingKeyInputPreviewColor">@color/sliding_key_input_preview_color_lxx_light</item>
-        <item name="languageOnSpacebarTextColor">@color/language_on_spacebar_text_color_lxx_light</item>
+        <item name="slidingKeyInputPreviewColor">@color/sliding_key_input_preview_color_lxx_light
+        </item>
+        <item name="languageOnSpacebarTextColor">@color/language_on_spacebar_text_color_lxx_light
+        </item>
         <!-- A negative value to disable text shadow layer. -->
         <item name="languageOnSpacebarTextShadowRadius">-1.0</item>
     </style>
-    <!-- Though {@link com.android.inputmethod.keyboard.emoji.EmojiPalettesView} doesn't extend
-         {@link com.android.inputmethod.keyboard.KeyboardView}, some views inside it, for instance
-         delete button, need themed {@link com.android.inputmethod.keyboard.KeyboardView}
+    <!-- Though {@link pl.rkbdi.anboard.inputmethod.keyboard.emoji.EmojiPalettesView} doesn't extend
+         {@link pl.rkbdi.anboard.inputmethod.keyboard.KeyboardView}, some views inside it, for instance
+         delete button, need themed {@link pl.rkbdi.anboard.inputmethod.keyboard.KeyboardView}
          attributes. -->
-    <style
-        name="EmojiPalettesView.LXX_Light"
-        parent="MainKeyboardView.LXX_Light"
-    >
+    <style name="EmojiPalettesView.LXX_Light" parent="MainKeyboardView.LXX_Light">
         <item name="categoryIndicatorEnabled">false</item>
         <item name="categoryPageIndicatorColor">@color/highlight_color_lxx_light</item>
-        <item name="categoryPageIndicatorBackground">@color/emoji_tab_page_indicator_background_lxx_light</item>
+        <item name="categoryPageIndicatorBackground">
+            @color/emoji_tab_page_indicator_background_lxx_light
+        </item>
         <item name="iconEmojiRecentsTab">@drawable/ic_emoji_recents_lxx_light</item>
         <item name="iconEmojiCategory1Tab">@drawable/ic_emoji_people_lxx_light</item>
         <item name="iconEmojiCategory2Tab">@drawable/ic_emoji_objects_lxx_light</item>

@@ -23,16 +23,26 @@
 >
     <Key
         latin:keySpec="a"
+        latin:additionalMoreKeys="\\@"
+        latin:keyHintLabel="\@"
         latin:moreKeys="!text/morekeys_a" />
     <Key
         latin:keySpec="s"
+        latin:additionalMoreKeys="#"
+        latin:keyHintLabel="#"
         latin:moreKeys="!text/morekeys_s" />
     <Key
         latin:keySpec="d"
+        latin:additionalMoreKeys="$"
+        latin:keyHintLabel="$"
         latin:moreKeys="!text/morekeys_d" />
     <Key
+        latin:additionalMoreKeys="%"
+        latin:keyHintLabel="%"
         latin:keySpec="f" />
     <Key
         latin:keySpec="g"
+        latin:additionalMoreKeys="&amp;"
+        latin:keyHintLabel="&amp;"
         latin:moreKeys="!text/morekeys_g" />
 </merge>

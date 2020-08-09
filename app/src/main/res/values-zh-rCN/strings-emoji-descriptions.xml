@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -23,8 +23,7 @@
     TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
  -->
 
-<resources
-    >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_emoji_00A9" msgid="2859822817116803638">"版权符号"</string>
     <string name="spoken_emoji_00AE" msgid="7708335454134589027">"注册符号"</string>
     <string name="spoken_emoji_203C" msgid="153340916701508663">"双叹号"</string>
@@ -1125,7 +1124,7 @@
     <string name="spoken_emoji_1F69E" msgid="169238196389832234">"山区铁路"</string>
     <string name="spoken_emoji_1F69F" msgid="7508128757012845102">"高架铁路"</string>
     <string name="spoken_emoji_1F6A0" msgid="8733056213790160147">"山地索道"</string>
-    <string name="spoken_emoji_1F6A1" msgid="4666516337749347253">"空中缆车"</string>
+    <string name="spoken_emoji_1F6A1" msgid="4666516337749347253">"高空旋转缆车"</string>
     <string name="spoken_emoji_1F6A2" msgid="4511220588943129583">"轮船"</string>
     <string name="spoken_emoji_1F6A3" msgid="8412962252222205387">"小船"</string>
     <string name="spoken_emoji_1F6A4" msgid="8867571300266339211">"快艇"</string>

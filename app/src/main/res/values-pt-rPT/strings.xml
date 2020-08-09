@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="english_ime_input_options" msgid="3909945612939668554">"Opções de introdução"</string>
     <string name="use_contacts_for_spellchecking_option_title" msgid="5374120998125353898">"Procurar nomes de contac."</string>
     <string name="use_contacts_for_spellchecking_option_summary" msgid="8754413382543307713">"O corretor ortográfico utiliza entradas da sua lista de contactos"</string>
@@ -140,7 +139,7 @@
     <string name="prefs_enable_emoji_alt_physical_key" msgid="5963640002335470112">"Emoji para teclado físico"</string>
     <string name="prefs_enable_emoji_alt_physical_key_summary" msgid="5259484820941627827">"A tecla Alt física mostra a paleta de emoji"</string>
     <string name="button_default" msgid="3988017840431881491">"Predefinido"</string>
-    <string name="setup_welcome_title" msgid="6112821709832031715">"Bem-vindo(a) a <xliff:g id="APPLICATION_NAME">%s</xliff:g>"</string>
+    <string name="setup_welcome_title" msgid="6112821709832031715">"Bem-vindo a <xliff:g id="APPLICATION_NAME">%s</xliff:g>"</string>
     <string name="setup_welcome_additional_description" msgid="8150252008545768953">"com a Escrita com Gestos"</string>
     <string name="setup_start_action" msgid="8936036460897347708">"Começar"</string>
     <string name="setup_next_action" msgid="371821437915144603">"Passo seguinte"</string>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="english_ime_input_options" msgid="3909945612939668554">"Opzioni inserimento"</string>
     <string name="use_contacts_for_spellchecking_option_title" msgid="5374120998125353898">"Cerca in nomi contatti"</string>
     <string name="use_contacts_for_spellchecking_option_summary" msgid="8754413382543307713">"La funzione di controllo ortografico usa voci dell\'elenco contatti"</string>
@@ -44,7 +43,7 @@
     <string name="clear_sync_data_ok" msgid="613104067705915132">"Elimina"</string>
     <string name="cloud_sync_cancel" msgid="5877481252150919037">"Annulla"</string>
     <string name="cloud_sync_opt_in_text" msgid="9176039655776298248">"Il tuo dizionario personale verrà sincronizzato sui server di Google e ne verrà effettuato il backup. Potrebbero essere raccolte informazioni statistiche relative alla frequenza delle parole per migliorare i nostri prodotti. La raccolta e l\'utilizzo di tutte le informazioni saranno conformi alle "<a href="https://www.google.com/policies/privacy">"Norme sulla privacy di Google"</a>"."</string>
-    <string name="add_account_to_enable_sync" msgid="7836932571852055265">"Per attivare la funzione, aggiungi un account Google al dispositivo"</string>
+    <string name="add_account_to_enable_sync" msgid="7836932571852055265">"Per attivare la funzione, aggiungi un Account Google al dispositivo"</string>
     <string name="cloud_sync_summary_disabled_work_profile" msgid="1381770407303129164">"La sincronizzazione non è disponibile per i dispositivi con account Google Apps for Business"</string>
     <string name="include_other_imes_in_language_switch_list" msgid="4533689960308565519">"Altri metodi immissione"</string>
     <string name="include_other_imes_in_language_switch_list_summary" msgid="840637129103317635">"Il tasto per cambiare lingua offre altri metodi di immissione"</string>
@@ -157,7 +156,7 @@
     <string name="setup_step3_action" msgid="600879797256942259">"Configura altre lingue"</string>
     <string name="setup_finish_action" msgid="276559243409465389">"Terminato"</string>
     <string name="show_setup_wizard_icon" msgid="5008028590593710830">"Mostra icona app"</string>
-    <string name="show_setup_wizard_icon_summary" msgid="4119998322536880213">"Mostra l\'icona dell\'app in Avvio applicazioni"</string>
+    <string name="show_setup_wizard_icon_summary" msgid="4119998322536880213">"Mostra l\'icona dell\'app in Avvio app"</string>
     <string name="app_name" msgid="6320102637491234792">"Dictionary Provider"</string>
     <string name="dictionary_provider_name" msgid="3027315045397363079">"Dictionary Provider"</string>
     <string name="dictionary_service_name" msgid="6237472350693511448">"Servizio dizionario"</string>
@@ -209,4 +208,6 @@
     <string name="user_dict_settings_more_languages" msgid="7131268499685180461">"Altre lingue..."</string>
     <string name="user_dict_settings_delete" msgid="110413335187193859">"Elimina"</string>
     <string name="user_dict_fast_scroll_alphabet" msgid="5431919401558285473">" ABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>
+    <string name="prefs_resize_keyboard">Abilita ridimensionamento</string>
+    <string name="prefs_keyboard_height_scale">Altezza tastiera</string>
 </resources>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -23,8 +23,7 @@
     TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
  -->
 
-<resources
-    >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_emoji_00A9" msgid="2859822817116803638">"Biểu tượng bản quyền"</string>
     <string name="spoken_emoji_00AE" msgid="7708335454134589027">"Biểu tượng đã đăng ký"</string>
     <string name="spoken_emoji_203C" msgid="153340916701508663">"Hai dấu chấm than"</string>

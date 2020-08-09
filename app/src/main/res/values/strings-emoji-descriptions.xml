@@ -21,27 +21,27 @@
     These Emoji symbols are unsupported by TTS.
     TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
 -->
-<resources>
-     <!-- Spoken description for Unicode code point U+00A9: "©" COPYRIGHT SIGN -->
-     <string name="spoken_emoji_00A9">Copyright sign</string>
-     <!-- Spoken description for Unicode code point U+00AE: "®" REGISTERED SIGN -->
-     <string name="spoken_emoji_00AE">Registered sign</string>
-     <!-- Spoken description for Unicode code point U+203C: "‼" DOUBLE EXCLAMATION MARK -->
-     <string name="spoken_emoji_203C">Double exclamation mark</string>
-     <!-- Spoken description for Unicode code point U+2049: "⁉" EXCLAMATION QUESTION MARK -->
-     <string name="spoken_emoji_2049">Exclamation question mark</string>
-     <!-- Spoken description for Unicode code point U+2122: "™" TRADE MARK SIGN -->
-     <string name="spoken_emoji_2122">Trade mark sign</string>
-     <!-- Spoken description for Unicode code point U+2139: "ℹ" INFORMATION SOURCE -->
-     <string name="spoken_emoji_2139">Information source</string>
-     <!-- Spoken description for Unicode code point U+2194: "↔" LEFT RIGHT ARROW -->
-     <string name="spoken_emoji_2194">Left right arrow</string>
-     <!-- Spoken description for Unicode code point U+2195: "↕" UP DOWN ARROW -->
-     <string name="spoken_emoji_2195">Up down arrow</string>
-     <!-- Spoken description for Unicode code point U+2196: "↖" NORTH WEST ARROW -->
-     <string name="spoken_emoji_2196">North west arrow</string>
-     <!-- Spoken description for Unicode code point U+2197: "↗" NORTH EAST ARROW -->
-     <string name="spoken_emoji_2197">North east arrow</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <!-- Spoken description for Unicode code point U+00A9: "©" COPYRIGHT SIGN -->
+ <string name="spoken_emoji_00A9">Copyright sign</string>
+ <!-- Spoken description for Unicode code point U+00AE: "®" REGISTERED SIGN -->
+ <string name="spoken_emoji_00AE">Registered sign</string>
+ <!-- Spoken description for Unicode code point U+203C: "‼" DOUBLE EXCLAMATION MARK -->
+ <string name="spoken_emoji_203C">Double exclamation mark</string>
+ <!-- Spoken description for Unicode code point U+2049: "⁉" EXCLAMATION QUESTION MARK -->
+ <string name="spoken_emoji_2049">Exclamation question mark</string>
+ <!-- Spoken description for Unicode code point U+2122: "™" TRADE MARK SIGN -->
+ <string name="spoken_emoji_2122">Trade mark sign</string>
+ <!-- Spoken description for Unicode code point U+2139: "ℹ" INFORMATION SOURCE -->
+ <string name="spoken_emoji_2139">Information source</string>
+ <!-- Spoken description for Unicode code point U+2194: "↔" LEFT RIGHT ARROW -->
+ <string name="spoken_emoji_2194">Left right arrow</string>
+ <!-- Spoken description for Unicode code point U+2195: "↕" UP DOWN ARROW -->
+ <string name="spoken_emoji_2195">Up down arrow</string>
+ <!-- Spoken description for Unicode code point U+2196: "↖" NORTH WEST ARROW -->
+ <string name="spoken_emoji_2196">North west arrow</string>
+ <!-- Spoken description for Unicode code point U+2197: "↗" NORTH EAST ARROW -->
+ <string name="spoken_emoji_2197">North east arrow</string>
      <!-- Spoken description for Unicode code point U+2198: "↘" SOUTH EAST ARROW -->
      <string name="spoken_emoji_2198">South east arrow</string>
      <!-- Spoken description for Unicode code point U+2199: "↙" SOUTH WEST ARROW -->

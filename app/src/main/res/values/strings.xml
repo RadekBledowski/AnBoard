@@ -18,6 +18,19 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="english_ime_name" translatable="false">AnBoard</string>
+    <!-- Name of Android spell checker service. AOSP(Android Open Source Project) should not be translated.
+         This resource should be copied from msgid="511950477199948048" -->
+    <string name="spell_checker_service_name">AnBoard Spell Checker</string>
+    <!-- Title for Android Keyboard settings screen. AOSP(Android Open Source Project) should not be translated.
+         This resource should be copied from msgid="423615877174850267" -->
+    <string name="english_ime_settings">AnBoard Settings</string>
+    <!-- Title for the spell checking service settings screen. AOSP(Android Open Source Project) should not be translated.
+         This resource should be copied from msgid="2970535894327288421" -->
+    <string name="android_spell_checker_settings">AnBoard Spell Checker Settings</string>
+
+
     <!-- Title for Latin keyboard input options dialog [CHAR LIMIT=25] -->
     <string name="english_ime_input_options">Input options</string>
 
@@ -210,6 +223,11 @@
     <!-- Title of the item to change the keyboard theme [CHAR LIMIT=20]-->
     <string name="keyboard_layout">Keyboard theme</string>
 
+    <!-- Title of the settings to enable keyboard resizing -->
+    <string name="prefs_resize_keyboard">Enable keyboard resizing</string>
+    <!-- Title of the settings for setting keyboard height -->
+    <string name="prefs_keyboard_height_scale">Keyboard height scale</string>
+
     <!-- Title of the preference item for switching accounts [CHAR LIMIT=30] -->
     <string name="switch_accounts">Switch accounts</string>
     <!-- Summary of the preference item for switching accounts when no accounts
@@ -355,6 +373,8 @@ mobile devices. [CHAR LIMIT=25] -->
     <string name="keyboard_theme_material_dark" translatable="false">Material Dark</string>
     <!-- The keyboard theme name, Material Light. This is marked as translatable="false" because this is a proper name of system-wide UI Theme.  -->
     <string name="keyboard_theme_material_light" translatable="false">Material Light</string>
+    <string name="keyboard_theme_dark_border" translatable="false">Material Dark Border</string>
+    <string name="keyboard_theme_light_border" translatable="false">Material Light Border</string>
 
     <!-- Title of the preference settings for custom input styles (language and keyboard layout pairs) [CHAR LIMIT=35]-->
     <string name="custom_input_styles_title">Custom input styles</string>
@@ -577,14 +597,8 @@ Tip: You can download and remove dictionaries by going to &lt;b>Languages&#160;&
          This resource is copied from packages/apps/Settings/res/values/strings.xml -->
     <!-- This resource is corresponding to msgid="5433275485499039199" -->
     <string name="user_dict_fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
-
-    <string name="zibil">zibil</string>
-    <string name="language_switch_key">Language switch key</string>
-    <string name="space_swipe">Space swipe cursor move</string>
-    <string name="space_swipe_desc">Swipe left and right over the spacebar to move the cursor</string>
     <string name="delete_swipe">Delete swipe</string>
-    <string name="delete_swipe_desc">Swipe left and hold from the backspace key to delete text</string>
-    <string name="hide_special_chars">Hide special characters</string>
-    <string name="show_number_row">Show separate number row</string>
-
+    <string name="space_trackpad">Space bar trackpad</string>
+    <string name="delete_swipe_summary">Perform a swipe from the delete key to select and remove bigger portions of text at once</string>
+    <string name="space_trackpad_summary">Swipe on the spacebar to move the cursor</string>
 </resources>

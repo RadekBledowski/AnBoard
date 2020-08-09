@@ -22,30 +22,51 @@
     xmlns:latin="http://schemas.android.com/apk/res-auto"
 >
     <Key
-        latin:keySpec="q" />
+        latin:additionalMoreKeys="\\@"
+        latin:keyHintLabel="\@"
+        latin:keySpec="q"
+        latin:moreKeys="!text/morekeys_q" />
     <Key
         latin:keySpec="s"
+        latin:additionalMoreKeys="#"
+        latin:keyHintLabel="#"
         latin:moreKeys="!text/morekeys_s" />
     <Key
         latin:keySpec="d"
+        latin:additionalMoreKeys="$"
+        latin:keyHintLabel="$"
         latin:moreKeys="!text/morekeys_d" />
     <Key
+        latin:additionalMoreKeys="%"
+        latin:keyHintLabel="%"
         latin:keySpec="f" />
     <Key
         latin:keySpec="g"
+        latin:additionalMoreKeys="&amp;"
+        latin:keyHintLabel="&amp;"
         latin:moreKeys="!text/morekeys_g" />
     <Key
         latin:keySpec="h"
+        latin:additionalMoreKeys="-"
+        latin:keyHintLabel="-"
         latin:moreKeys="!text/morekeys_h" />
     <Key
         latin:keySpec="j"
+        latin:additionalMoreKeys="+"
+        latin:keyHintLabel="+"
         latin:moreKeys="!text/morekeys_j" />
     <Key
         latin:keySpec="k"
+        latin:additionalMoreKeys="("
+        latin:keyHintLabel="("
         latin:moreKeys="!text/morekeys_k" />
     <Key
         latin:keySpec="l"
+        latin:additionalMoreKeys=")"
+        latin:keyHintLabel=")"
         latin:moreKeys="!text/morekeys_l" />
     <Key
+        latin:additionalMoreKeys="\\?"
+        latin:keyHintLabel="\?"
         latin:keySpec="m" />
 </merge>

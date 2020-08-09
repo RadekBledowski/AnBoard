@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -24,8 +24,7 @@
     TODO: Remove these string resources when TTS/TalkBack support these letters.
  -->
 
-<resources
-    >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_accented_letter_00AA" msgid="4374325261868451570">"Ordnungszeichen weiblich"</string>
     <string name="spoken_accented_letter_00B5" msgid="9031387673828823891">"Mikrozeichen"</string>
     <string name="spoken_accented_letter_00BA" msgid="5045198452071207437">"Ordnungszeichen männlich"</string>
@@ -199,7 +198,7 @@
     <string name="spoken_symbol_20B1" msgid="2159994270622444689">"Peso-Zeichen"</string>
     <string name="spoken_symbol_2105" msgid="7289404939366976829">"Per Adresse"</string>
     <string name="spoken_symbol_2192" msgid="827804523596125414">"Pfeil nach rechts"</string>
-    <string name="spoken_symbol_2193" msgid="2659541693445985717">"Pfeil nach unten"</string>
+    <string name="spoken_symbol_2193" msgid="2659541693445985717">"Abwärtspfeil"</string>
     <string name="spoken_symbol_2205" msgid="4457188084269117343">"Leere Menge"</string>
     <string name="spoken_symbol_2206" msgid="4856786565708380687">"Differenzzeichen"</string>
     <string name="spoken_symbol_2264" msgid="5092061257745123554">"Kleiner/gleich"</string>

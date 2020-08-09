@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -23,8 +23,7 @@
     TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
  -->
 
-<resources
-    >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_emoji_00A9" msgid="2859822817116803638">"Znak copyright"</string>
     <string name="spoken_emoji_00AE" msgid="7708335454134589027">"Znak registrovanej ochrannej známky"</string>
     <string name="spoken_emoji_203C" msgid="153340916701508663">"Dvojitý výkričník"</string>
@@ -777,7 +776,7 @@
     <string name="spoken_emoji_1F4C7" msgid="2665313547987324495">"Otočný vizitkár"</string>
     <string name="spoken_emoji_1F4C8" msgid="8007686702282833600">"Graf so vzostupujúcim trendom"</string>
     <string name="spoken_emoji_1F4C9" msgid="2271951411192893684">"Graf so zostupujúcim trendom"</string>
-    <string name="spoken_emoji_1F4CA" msgid="3525692829622381444">"Stĺpcový graf"</string>
+    <string name="spoken_emoji_1F4CA" msgid="3525692829622381444">"Pruhový graf"</string>
     <string name="spoken_emoji_1F4CB" msgid="977639227554095521">"Podložka na písanie s klipom"</string>
     <string name="spoken_emoji_1F4CC" msgid="156107396088741574">"Pripináčik"</string>
     <string name="spoken_emoji_1F4CD" msgid="4266572175361190231">"Guľatý pripináčik"</string>

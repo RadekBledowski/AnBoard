@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_use_headphones" msgid="4313642710742229868">"برای شنیدن کلیدهای گذرواژه که با صدای بلند خوانده می‌شوند، از هدست استفاده کنید."</string>
     <string name="spoken_current_text_is" msgid="4240549866156675799">"‏نوشتار کنونی %s است"</string>
     <string name="spoken_no_text_entered" msgid="1711276837961785646">"نوشتاری وارد نشده است"</string>
@@ -58,7 +57,7 @@
     <string name="announce_keyboard_mode" msgid="6698257917367823205">"در حال نمایش صفحه‌کلید <xliff:g id="KEYBOARD_MODE">%s</xliff:g>"</string>
     <string name="keyboard_mode_date" msgid="6597407244976713364">"تاریخ"</string>
     <string name="keyboard_mode_date_time" msgid="3642804408726668808">"تاریخ و زمان"</string>
-    <string name="keyboard_mode_email" msgid="1239682082047693644">"رایانامه"</string>
+    <string name="keyboard_mode_email" msgid="1239682082047693644">"ایمیل"</string>
     <string name="keyboard_mode_im" msgid="3812086215529493501">"پیام‌رسانی"</string>
     <string name="keyboard_mode_number" msgid="5395042245837996809">"عدد"</string>
     <string name="keyboard_mode_phone" msgid="2486230278064523665">"تلفن"</string>
@@ -74,7 +73,7 @@
     <string name="spoken_descrption_emoji_category_flags" msgid="5971573825866381472">"پرچم‌ها"</string>
     <string name="spoken_descrption_emoji_category_eight_smiley_people" msgid="5682663819532433464">"شکلک و مردم"</string>
     <string name="spoken_descrption_emoji_category_eight_animals_nature" msgid="5844950234883716704">"حیوانات و طبیعت"</string>
-    <string name="spoken_descrption_emoji_category_eight_food_drink" msgid="6196944764485349650">"خوردنی‌ها و آشامیدنی‌ها"</string>
+    <string name="spoken_descrption_emoji_category_eight_food_drink" msgid="6196944764485349650">"‏غذا و نوشیدنی"</string>
     <string name="spoken_descrption_emoji_category_eight_travel_places" msgid="3834085499381434611">"سفر و مکان‌ها"</string>
     <string name="spoken_descrption_emoji_category_eight_activity" msgid="4795281669042975993">"فعالیت"</string>
     <string name="spoken_descrption_emoji_category_emoticons" msgid="456737544787823539">"شکلک‌ها"</string>

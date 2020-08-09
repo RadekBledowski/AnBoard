@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="english_ime_input_options" msgid="3909945612939668554">"Опции за въвеждане"</string>
     <string name="use_contacts_for_spellchecking_option_title" msgid="5374120998125353898">"Търсене на имена"</string>
     <string name="use_contacts_for_spellchecking_option_summary" msgid="8754413382543307713">"За проверка на правописа се ползват записи от списъка с контакти"</string>
@@ -80,7 +79,7 @@
     <string name="bigram_prediction_summary" msgid="3896362682751109677">"Използване на предишната дума при даване на предложения"</string>
     <string name="gesture_input" msgid="826951152254563827">"Актив. на въвеждане чрез жест"</string>
     <string name="gesture_input_summary" msgid="9180350639305731231">"Въвеждане на дума чрез плъзгане на пръст през буквите"</string>
-    <string name="gesture_preview_trail" msgid="3802333369335722221">"Следа на жестовете"</string>
+    <string name="gesture_preview_trail" msgid="3802333369335722221">"Следа от жестовете"</string>
     <string name="gesture_floating_preview_text" msgid="4443240334739381053">"Динам. плаваща визуализ."</string>
     <string name="gesture_floating_preview_text_summary" msgid="4472696213996203533">"Преглед на предложената дума при използване на жестове"</string>
     <string name="gesture_space_aware" msgid="2078291600664682496">"Жест за фрази"</string>

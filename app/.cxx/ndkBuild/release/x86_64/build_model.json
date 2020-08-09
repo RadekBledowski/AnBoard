@@ -1,0 +1,128 @@
+{
+  "abi": "X86_64",
+  "abiPlatformVersion": 19,
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "cxxBuildFolder": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\.cxx\\ndkBuild\\release\\x86_64",
+  "info": {
+    "abi": "X86_64",
+    "bitness": 64,
+    "deprecated": false,
+    "default": true
+  },
+  "originalCxxBuildFolder": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\.cxx\\ndkBuild\\release\\x86_64",
+  "variant": {
+    "buildSystemArgumentList": [],
+    "buildTargetSet": [],
+    "cFlagsList": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "cppFlagsList": [],
+    "isDebuggableEnabled": false,
+    "module": {
+      "buildSystem": "NDK_BUILD",
+      "cmakeToolchainFile": "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake",
+      "cxxFolder": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\.cxx",
+      "gradleModulePathName": ":app",
+      "intermediatesFolder": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\build\\intermediates",
+      "makeFile": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\src\\main\\native\\jni\\Android.mk",
+      "moduleBuildFile": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\build.gradle",
+      "moduleRootFolder": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app",
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkFolder": "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669",
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "ndkMetaPlatforms": {
+        "min": 16,
+        "max": 29,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29
+        }
+      },
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "SYSTEM",
+      "ndkVersion": "21.0.6113669",
+      "project": {
+        "compilerSettingsCacheFolder": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\.cxx",
+        "cxxFolder": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\.cxx",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isNativeCompilerSettingsCacheEnabled": false,
+        "rootBuildGradleFolder": "Y:\\Projects\\Github\\RKBDI\\AnBoard",
+        "sdkFolder": "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk",
+        "isPrefabEnabled": false
+      },
+      "splitsAbiFilterSet": [],
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
+          "ARM64_V8A": "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+          "X86": "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
+          "X86_64": "C:\\Users\\Stjinchan\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      }
+    },
+    "objFolder": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local",
+    "variantName": "release",
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "prefabDirectory": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\.cxx\\ndkBuild\\release\\prefab",
+    "prefabPackageDirectoryList": []
+  },
+  "prefabFolder": "Y:\\Projects\\Github\\RKBDI\\AnBoard\\app\\.cxx\\ndkBuild\\release\\prefab\\x86_64"
+}

@@ -37,14 +37,4 @@
         android:title="@string/gesture_preview_trail"
         android:defaultValue="true"
         android:persistent="true" />
-    <CheckBoxPreference
-        android:defaultValue="true"
-        android:key="pref_space_swipe"
-        android:summary="@string/space_swipe_desc"
-        android:title="@string/space_swipe" />
-    <CheckBoxPreference
-        android:defaultValue="true"
-        android:key="pref_delete_swipe"
-        android:summary="@string/delete_swipe_desc"
-        android:title="@string/delete_swipe" />
 </PreferenceScreen>

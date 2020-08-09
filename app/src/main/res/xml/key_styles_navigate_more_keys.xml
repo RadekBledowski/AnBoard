@@ -22,7 +22,7 @@
     xmlns:latin="http://schemas.android.com/apk/res-auto"
 >
     <switch>
-        <!--<case latin:keyboardTheme="ICS|KLP">
+        <case latin:keyboardTheme="ICS|KLP">
             <key-style
                 latin:styleName="navigateNextMoreKeysStyle"
                 latin:keyLabelFlags="hasPopupHint|preserveCase"
@@ -51,7 +51,7 @@
                 latin:styleName="navigateEmojiPreviousNextMoreKeysStyle"
                 latin:keyLabelFlags="hasPopupHint|preserveCase"
                 latin:moreKeys="!fixedColumnOrder!3,!needsDividers!,!text/keyspec_emoji_action_key,!text/keyspec_action_previous,!text/keyspec_action_next" />
-        </case>-->
+        </case>
         <default>
             <key-style
                 latin:styleName="navigateNextMoreKeysStyle"

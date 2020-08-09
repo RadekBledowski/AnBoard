@@ -22,162 +22,108 @@
     xmlns:latin="http://schemas.android.com/apk/res-auto"
 >
     <switch>
-        <case latin:showNumberRow="true">
-            <switch>
-                <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked|alphabetShiftLockShifted">
-                    <Key latin:keySpec="Q" />
-                    <!-- U+10ED: "ჭ" GEORGIAN LETTER CHAR -->
-                    <Key latin:keySpec="&#x10ED;" />
-                    <Key latin:keySpec="E" />
-                    <!-- U+10E6: "ღ" GEORGIAN LETTER GHAN -->
-                    <Key latin:keySpec="&#x10E6;" />
-                    <!-- U+10D7: "თ" GEORGIAN LETTER TAN -->
-                    <Key latin:keySpec="&#x10D7;" />
-                    <Key latin:keySpec="Y" />
-                    <Key latin:keySpec="U" />
-                    <Key latin:keySpec="I" />
-                    <Key latin:keySpec="O" />
-                    <Key latin:keySpec="P" />
-                </case>
-                <default>
-                    <!-- U+10E5: "ქ" GEORGIAN LETTER GHAN -->
-                    <Key latin:keySpec="&#x10E5;" />
-                    <!-- U+10EC: "წ" GEORGIAN LETTER CIL -->
-                    <Key latin:keySpec="&#x10EC;" />
-                    <!-- U+10D4: "ე" GEORGIAN LETTER EN
-                         U+10F1: "ჱ" GEORGIAN LETTER HE -->
-                    <Key
-                        latin:keySpec="&#x10D4;"
-                        latin:moreKeys="&#x10F1;" />
-                    <!-- U+10E0: "რ" GEORGIAN LETTER RAE -->
-                    <Key latin:keySpec="&#x10E0;" />
-                    <!-- U+10E2: "ტ" GEORGIAN LETTER TAR -->
-                    <Key latin:keySpec="&#x10E2;" />
-                    <!-- U+10E7: "ყ" GEORGIAN LETTER QAR
-                         U+10F8: "ჸ" GEORGIAN LETTER ELIFI -->
-                    <Key
-                        latin:keySpec="&#x10E7;"
-                        latin:moreKeys="&#x10F8;" />
-                    <!-- U+10E3: "უ" GEORGIAN LETTER UN -->
-                    <Key latin:keySpec="&#x10E3;" />
-                    <!-- U+10D8: "ი" GEORGIAN LETTER IN
-                         U+10F2: "ჲ" GEORGIAN LETTER HIE -->
-                    <Key
-                        latin:keySpec="&#x10D8;"
-                        latin:moreKeys="&#x10F2;" />
-                    <!-- U+10DD: "ო" GEORGIAN LETTER ON -->
-                    <Key latin:keySpec="&#x10DD;" />
-                    <!-- U+10DE: "პ" GEORGIAN LETTER PAR -->
-                    <Key latin:keySpec="&#x10DE;" />
-                </default>
-            </switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked|alphabetShiftLockShifted">
+            <Key
+                latin:additionalMoreKeys="1"
+                latin:keyHintLabel="1"
+                latin:keySpec="Q" />
+            <!-- U+10ED: "ჭ" GEORGIAN LETTER CHAR -->
+            <Key
+                latin:additionalMoreKeys="2"
+                latin:keyHintLabel="2"
+                latin:keySpec="&#x10ED;" />
+            <Key
+                latin:additionalMoreKeys="3"
+                latin:keyHintLabel="3"
+                latin:keySpec="E" />
+            <!-- U+10E6: "ღ" GEORGIAN LETTER GHAN -->
+            <Key
+                latin:additionalMoreKeys="4"
+                latin:keyHintLabel="4"
+                latin:keySpec="&#x10E6;" />
+            <!-- U+10D7: "თ" GEORGIAN LETTER TAN -->
+            <Key
+                latin:additionalMoreKeys="5"
+                latin:keyHintLabel="5"
+                latin:keySpec="&#x10D7;" />
+            <Key
+                latin:additionalMoreKeys="6"
+                latin:keyHintLabel="6"
+                latin:keySpec="Y" />
+            <Key
+                latin:additionalMoreKeys="7"
+                latin:keyHintLabel="7"
+                latin:keySpec="U" />
+            <Key
+                latin:additionalMoreKeys="8"
+                latin:keyHintLabel="8"
+                latin:keySpec="I" />
+            <Key
+                latin:additionalMoreKeys="9"
+                latin:keyHintLabel="9"
+                latin:keySpec="O" />
+            <Key
+                latin:additionalMoreKeys="0"
+                latin:keyHintLabel="0"
+                latin:keySpec="P" />
         </case>
         <default>
-            <switch>
-                <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked|alphabetShiftLockShifted">
-                    <Key
-                        latin:additionalMoreKeys="1"
-                        latin:keyHintLabel="1"
-                        latin:keySpec="Q" />
-                    <!-- U+10ED: "ჭ" GEORGIAN LETTER CHAR -->
-                    <Key
-                        latin:additionalMoreKeys="2"
-                        latin:keyHintLabel="2"
-                        latin:keySpec="&#x10ED;" />
-                    <Key
-                        latin:additionalMoreKeys="3"
-                        latin:keyHintLabel="3"
-                        latin:keySpec="E" />
-                    <!-- U+10E6: "ღ" GEORGIAN LETTER GHAN -->
-                    <Key
-                        latin:additionalMoreKeys="4"
-                        latin:keyHintLabel="4"
-                        latin:keySpec="&#x10E6;" />
-                    <!-- U+10D7: "თ" GEORGIAN LETTER TAN -->
-                    <Key
-                        latin:additionalMoreKeys="5"
-                        latin:keyHintLabel="5"
-                        latin:keySpec="&#x10D7;" />
-                    <Key
-                        latin:additionalMoreKeys="6"
-                        latin:keyHintLabel="6"
-                        latin:keySpec="Y" />
-                    <Key
-                        latin:additionalMoreKeys="7"
-                        latin:keyHintLabel="7"
-                        latin:keySpec="U" />
-                    <Key
-                        latin:additionalMoreKeys="8"
-                        latin:keyHintLabel="8"
-                        latin:keySpec="I" />
-                    <Key
-                        latin:additionalMoreKeys="9"
-                        latin:keyHintLabel="9"
-                        latin:keySpec="O" />
-                    <Key
-                        latin:additionalMoreKeys="0"
-                        latin:keyHintLabel="0"
-                        latin:keySpec="P" />
-                </case>
-                <default>
-                    <!-- U+10E5: "ქ" GEORGIAN LETTER GHAN -->
-                    <Key
-                        latin:additionalMoreKeys="1"
-                        latin:keyHintLabel="1"
-                        latin:keySpec="&#x10E5;" />
-                    <!-- U+10EC: "წ" GEORGIAN LETTER CIL -->
-                    <Key
-                        latin:additionalMoreKeys="2"
-                        latin:keyHintLabel="2"
-                        latin:keySpec="&#x10EC;" />
-                    <!-- U+10D4: "ე" GEORGIAN LETTER EN
-                         U+10F1: "ჱ" GEORGIAN LETTER HE -->
-                    <Key
-                        latin:additionalMoreKeys="3"
-                        latin:keyHintLabel="3"
-                        latin:keySpec="&#x10D4;"
-                        latin:moreKeys="&#x10F1;" />
-                    <!-- U+10E0: "რ" GEORGIAN LETTER RAE -->
-                    <Key
-                        latin:additionalMoreKeys="4"
-                        latin:keyHintLabel="4"
-                        latin:keySpec="&#x10E0;" />
-                    <!-- U+10E2: "ტ" GEORGIAN LETTER TAR -->
-                    <Key
-                        latin:additionalMoreKeys="5"
-                        latin:keyHintLabel="5"
-                        latin:keySpec="&#x10E2;" />
-                    <!-- U+10E7: "ყ" GEORGIAN LETTER QAR
-                         U+10F8: "ჸ" GEORGIAN LETTER ELIFI -->
-                    <Key
-                        latin:additionalMoreKeys="6"
-                        latin:keyHintLabel="6"
-                        latin:keySpec="&#x10E7;"
-                        latin:moreKeys="&#x10F8;" />
-                    <!-- U+10E3: "უ" GEORGIAN LETTER UN -->
-                    <Key
-                        latin:additionalMoreKeys="7"
-                        latin:keyHintLabel="7"
-                        latin:keySpec="&#x10E3;" />
-                    <!-- U+10D8: "ი" GEORGIAN LETTER IN
-                         U+10F2: "ჲ" GEORGIAN LETTER HIE -->
-                    <Key
-                        latin:additionalMoreKeys="8"
-                        latin:keyHintLabel="8"
-                        latin:keySpec="&#x10D8;"
-                        latin:moreKeys="&#x10F2;" />
-                    <!-- U+10DD: "ო" GEORGIAN LETTER ON -->
-                    <Key
-                        latin:additionalMoreKeys="9"
-                        latin:keyHintLabel="9"
-                        latin:keySpec="&#x10DD;" />
-                    <!-- U+10DE: "პ" GEORGIAN LETTER PAR -->
-                    <Key
-                        latin:additionalMoreKeys="0"
-                        latin:keyHintLabel="0"
-                        latin:keySpec="&#x10DE;" />
-                </default>
-            </switch>
+            <!-- U+10E5: "ქ" GEORGIAN LETTER GHAN -->
+            <Key
+                latin:additionalMoreKeys="1"
+                latin:keyHintLabel="1"
+                latin:keySpec="&#x10E5;" />
+            <!-- U+10EC: "წ" GEORGIAN LETTER CIL -->
+            <Key
+                latin:additionalMoreKeys="2"
+                latin:keyHintLabel="2"
+                latin:keySpec="&#x10EC;" />
+            <!-- U+10D4: "ე" GEORGIAN LETTER EN
+                 U+10F1: "ჱ" GEORGIAN LETTER HE -->
+            <Key
+                latin:additionalMoreKeys="3"
+                latin:keyHintLabel="3"
+                latin:keySpec="&#x10D4;"
+                latin:moreKeys="&#x10F1;" />
+            <!-- U+10E0: "რ" GEORGIAN LETTER RAE -->
+            <Key
+                latin:additionalMoreKeys="4"
+                latin:keyHintLabel="4"
+                latin:keySpec="&#x10E0;" />
+            <!-- U+10E2: "ტ" GEORGIAN LETTER TAR -->
+            <Key
+                latin:additionalMoreKeys="5"
+                latin:keyHintLabel="5"
+                latin:keySpec="&#x10E2;" />
+            <!-- U+10E7: "ყ" GEORGIAN LETTER QAR
+                 U+10F8: "ჸ" GEORGIAN LETTER ELIFI -->
+            <Key
+                latin:additionalMoreKeys="6"
+                latin:keyHintLabel="6"
+                latin:keySpec="&#x10E7;"
+                latin:moreKeys="&#x10F8;" />
+            <!-- U+10E3: "უ" GEORGIAN LETTER UN -->
+            <Key
+                latin:additionalMoreKeys="7"
+                latin:keyHintLabel="7"
+                latin:keySpec="&#x10E3;" />
+            <!-- U+10D8: "ი" GEORGIAN LETTER IN
+                 U+10F2: "ჲ" GEORGIAN LETTER HIE -->
+            <Key
+                latin:additionalMoreKeys="8"
+                latin:keyHintLabel="8"
+                latin:keySpec="&#x10D8;"
+                latin:moreKeys="&#x10F2;" />
+            <!-- U+10DD: "ო" GEORGIAN LETTER ON -->
+            <Key
+                latin:additionalMoreKeys="9"
+                latin:keyHintLabel="9"
+                latin:keySpec="&#x10DD;" />
+            <!-- U+10DE: "პ" GEORGIAN LETTER PAR -->
+            <Key
+                latin:additionalMoreKeys="0"
+                latin:keyHintLabel="0"
+                latin:keySpec="&#x10DE;" />
         </default>
     </switch>
 </merge>

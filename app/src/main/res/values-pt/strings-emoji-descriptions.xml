@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -23,8 +23,7 @@
     TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
  -->
 
-<resources
-    >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_emoji_00A9" msgid="2859822817116803638">"Símbolo de copyright"</string>
     <string name="spoken_emoji_00AE" msgid="7708335454134589027">"Símbolo de marca registrada"</string>
     <string name="spoken_emoji_203C" msgid="153340916701508663">"Ponto de exclamação duplo"</string>
@@ -813,7 +812,7 @@
     <string name="spoken_emoji_1F4EB" msgid="6491414165464146137">"Caixa de correio fechada com bandeira levantada"</string>
     <string name="spoken_emoji_1F4EC" msgid="7369517138779988438">"Caixa de correio aberta com bandeira levantada"</string>
     <string name="spoken_emoji_1F4ED" msgid="5657520436285454241">"Caixa de correio aberta com bandeira abaixada"</string>
-    <string name="spoken_emoji_1F4EE" msgid="8464138906243608614">"Caixa de correio"</string>
+    <string name="spoken_emoji_1F4EE" msgid="8464138906243608614">"Caixa de e-mails"</string>
     <string name="spoken_emoji_1F4EF" msgid="8801427577198798226">"Corneta de correio"</string>
     <string name="spoken_emoji_1F4F0" msgid="6330208624731662525">"Jornal"</string>
     <string name="spoken_emoji_1F4F1" msgid="3966503935581675695">"Celular"</string>

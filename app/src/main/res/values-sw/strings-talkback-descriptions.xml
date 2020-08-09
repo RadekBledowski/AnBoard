@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_use_headphones" msgid="4313642710742229868">"Chomeka kifaa cha sauti ili usikie vitufe vya nenosiri vikitamkwa kwa sauti."</string>
     <string name="spoken_current_text_is" msgid="4240549866156675799">"Maandishi ya sasa ni %s"</string>
     <string name="spoken_no_text_entered" msgid="1711276837961785646">"Hakuna maandishi yaliyoingizwa"</string>
@@ -59,7 +58,7 @@
     <string name="keyboard_mode_date" msgid="6597407244976713364">"tarehe"</string>
     <string name="keyboard_mode_date_time" msgid="3642804408726668808">"tarehe na wakati"</string>
     <string name="keyboard_mode_email" msgid="1239682082047693644">"barua pepe"</string>
-    <string name="keyboard_mode_im" msgid="3812086215529493501">"utumaji ujumbe"</string>
+    <string name="keyboard_mode_im" msgid="3812086215529493501">"kutuma ujumbe"</string>
     <string name="keyboard_mode_number" msgid="5395042245837996809">"nambari"</string>
     <string name="keyboard_mode_phone" msgid="2486230278064523665">"simu"</string>
     <string name="keyboard_mode_text" msgid="9138789594969187494">"maandishi"</string>

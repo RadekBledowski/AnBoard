@@ -19,32 +19,32 @@
     android:key="screen_appearance"
     android:title="@string/settings_screen_appearance">
     <PreferenceScreen
-        android:fragment="com.android.inputmethod.latin.settings.ThemeSettingsFragment"
+        android:fragment="pl.rkbdi.anboard.inputmethod.latin.settings.ThemeSettingsFragment"
         android:key="screen_theme"
         android:title="@string/settings_screen_theme" />
     <PreferenceScreen
-        android:fragment="com.android.inputmethod.latin.settings.CustomInputStyleSettingsFragment"
+        android:fragment="pl.rkbdi.anboard.inputmethod.latin.settings.CustomInputStyleSettingsFragment"
         android:key="custom_input_styles"
         android:title="@string/custom_input_styles_title" />
-    <SwitchPreference
-        android:defaultValue="true"
-        android:key="pref_show_language_switch_key"
-        android:persistent="true"
-        android:title="@string/language_switch_key" />
     <CheckBoxPreference
         android:defaultValue="false"
+        android:key="pref_split_keyboard"
+        android:persistent="true"
+        android:title="@string/enable_split_keyboard" />
+    <CheckBoxPreference
+        android:key="pref_show_language_switch_key"
+        android:persistent="true"
+        android:defaultValue="false"
+        android:title="@string/show_language_switch_key" />
+    <CheckBoxPreference
         android:key="pref_resize_keyboard"
+        android:defaultValue="false"
         android:persistent="true"
         android:title="@string/prefs_resize_keyboard" />
-    <com.android.inputmethod.latin.settings.SeekBarDialogPreference
+    <pl.rkbdi.anboard.inputmethod.latin.settings.SeekBarDialogPreference
         android:dependency="pref_resize_keyboard"
         android:key="pref_keyboard_height_scale"
         android:title="@string/prefs_keyboard_height_scale"
         latin:maxValue="120"
         latin:minValue="50" /> <!-- percentage -->
-    <CheckBoxPreference
-        android:key="pref_split_keyboard"
-        android:title="@string/enable_split_keyboard"
-        android:persistent="true"
-        android:defaultValue="false" />
 </PreferenceScreen>

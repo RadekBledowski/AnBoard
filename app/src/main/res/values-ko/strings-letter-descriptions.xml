@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -24,8 +24,7 @@
     TODO: Remove these string resources when TTS/TalkBack support these letters.
  -->
 
-<resources
-    >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_accented_letter_00AA" msgid="4374325261868451570">"여성형 서수 표시기"</string>
     <string name="spoken_accented_letter_00B5" msgid="9031387673828823891">"마이크로 기호"</string>
     <string name="spoken_accented_letter_00BA" msgid="5045198452071207437">"남성형 서수 표시기"</string>

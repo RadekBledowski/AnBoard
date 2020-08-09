@@ -18,15 +18,16 @@
 */
 -->
 
-<com.android.inputmethod.latin.InputView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<pl.rkbdi.anboard.inputmethod.latin.InputView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     style="?attr/inputViewStyle">
+
     <include
         android:id="@+id/main_keyboard_frame"
         layout="@layout/main_keyboard_frame" />
+
     <include
         android:id="@+id/emoji_palettes_view"
         layout="@layout/emoji_palettes_view" />
-</com.android.inputmethod.latin.InputView>
+</pl.rkbdi.anboard.inputmethod.latin.InputView>

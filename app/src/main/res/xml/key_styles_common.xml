@@ -76,8 +76,26 @@
         latin:keySpec="!icon/delete_key|!code/key_delete"
         latin:keyActionFlags="isRepeatable|noKeyPreview"
         latin:backgroundType="functional" />
-    <include
-        latin:keyboardLayout="@xml/key_styles_enter" />
+    <!-- emojiKeyStyle must be defined before including @xml/key_syles_enter. -->
+    <switch>
+        <case latin:keyboardTheme="ICS|KLP|LXXLightBorder|LXXDarkBorder">
+            <key-style
+                latin:backgroundType="action"
+                latin:keyActionFlags="noKeyPreview"
+                latin:keySpec="!icon/emoji_action_key|!code/key_emoji"
+                latin:styleName="emojiKeyStyle" />
+        </case>
+        <!-- keyboardTheme="LXXLight|LXXDark" -->
+        <default>
+            <key-style
+                latin:backgroundType="action"
+                latin:keyActionFlags="noKeyPreview"
+                latin:keyLabelFlags="keepBackgroundAspectRatio"
+                latin:keySpec="!icon/emoji_action_key|!code/key_emoji"
+                latin:styleName="emojiKeyStyle" />
+        </default>
+    </switch>
+    <include latin:keyboardLayout="@xml/key_styles_enter" />
     <!-- TODO: Currently there is no way to specify icon alignment per theme. -->
     <key-style
         latin:styleName="spaceKeyStyle"
@@ -140,4 +158,10 @@
         latin:styleName="backFromMoreSymbolKeyStyle"
         latin:keySpec="!text/keylabel_to_symbol|!code/key_shift"
         latin:parentStyle="baseForLayoutSwitchKeyStyle" />
+    <key-style
+        latin:backgroundType="functional"
+        latin:keyLabelFlags="autoXScale|fontNormal|hasPopupHint|preserveCase"
+        latin:keySpec="!text/keyspec_popular_domain"
+        latin:moreKeys="!text/morekeys_popular_domain"
+        latin:styleName="comKeyStyle" />
 </merge>

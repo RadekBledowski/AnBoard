@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="english_ime_input_options" msgid="3909945612939668554">"Επιλογές εισόδου"</string>
     <string name="use_contacts_for_spellchecking_option_title" msgid="5374120998125353898">"Αναζήτηση ονομάτων επαφών"</string>
     <string name="use_contacts_for_spellchecking_option_summary" msgid="8754413382543307713">"Ο ορθογρ. έλεγχος χρησιμοπ. καταχωρίσεις από τη λίστα επαφών σας"</string>
@@ -158,8 +157,8 @@
     <string name="setup_finish_action" msgid="276559243409465389">"Ολοκληρώθηκε"</string>
     <string name="show_setup_wizard_icon" msgid="5008028590593710830">"Εμφάνιση εικονιδίου εφαρμογής"</string>
     <string name="show_setup_wizard_icon_summary" msgid="4119998322536880213">"Εμφάνιση εικονιδίου εφαρμογής στο πρόγραμμα εκκίνησης"</string>
-    <string name="app_name" msgid="6320102637491234792">"Παροχέας λεξικού"</string>
-    <string name="dictionary_provider_name" msgid="3027315045397363079">"Παροχέας λεξικού"</string>
+    <string name="app_name" msgid="6320102637491234792">"Πάροχος λεξικού"</string>
+    <string name="dictionary_provider_name" msgid="3027315045397363079">"Πάροχος λεξικού"</string>
     <string name="dictionary_service_name" msgid="6237472350693511448">"Υπηρεσία λεξικού"</string>
     <string name="download_description" msgid="6014835283119198591">"Ενημέρωση πληροφοριών λεξικού"</string>
     <string name="dictionary_settings_title" msgid="8091417676045693313">"Πρόσθετα λεξικά"</string>

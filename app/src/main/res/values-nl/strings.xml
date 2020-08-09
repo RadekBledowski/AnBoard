@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="english_ime_input_options" msgid="3909945612939668554">"Invoeropties"</string>
     <string name="use_contacts_for_spellchecking_option_title" msgid="5374120998125353898">"Contactnamen opzoeken"</string>
     <string name="use_contacts_for_spellchecking_option_summary" msgid="8754413382543307713">"De spellingcontrole gebruikt items uit je contactenlijst"</string>
@@ -89,7 +88,7 @@
     <string name="voice_input_disabled_summary" msgid="6323489602945135165">"Geen spraakinvoermethoden ingeschakeld. Bekijk de instellingen bij \'Talen en invoer\'."</string>
     <string name="configure_input_method" msgid="373356270290742459">"Invoermethoden configureren"</string>
     <string name="language_selection_title" msgid="3666971864764478269">"Talen"</string>
-    <string name="help_and_feedback" msgid="5328219371839879161">"Help en feedback"</string>
+    <string name="help_and_feedback" msgid="5328219371839879161">"Hulp en feedback"</string>
     <string name="select_language" msgid="5709487854987078367">"Talen"</string>
     <string name="hint_add_to_dictionary" msgid="2645988432867033007">"Tik nogmaals om op te slaan"</string>
     <string name="hint_add_to_dictionary_without_word" msgid="6710206006427574423">"Tik hier om op te slaan"</string>
@@ -188,7 +187,7 @@
     <string name="do_not_download_over_metered" msgid="2176209579313941583">"Downloaden via wifi"</string>
     <string name="dict_available_notification_title" msgid="4583842811218581658">"Er is een woordenboek beschikbaar voor het <xliff:g id="LANGUAGE_NAME">%1$s</xliff:g>"</string>
     <string name="dict_available_notification_description" msgid="1075194169443163487">"Druk om te controleren en te downloaden"</string>
-    <string name="toast_downloading_suggestions" msgid="6128155879830851739">"Downloaden: suggesties voor het <xliff:g id="LANGUAGE_NAME">%1$s</xliff:g> zijn straks beschikbaar."</string>
+    <string name="toast_downloading_suggestions" msgid="6128155879830851739">"Downloaden: suggesties voor het <xliff:g id="LANGUAGE_NAME">%1$s</xliff:g> zijn binnenkort beschikbaar."</string>
     <string name="version_text" msgid="2715354215568469385">"Versie <xliff:g id="VERSION_NUMBER">%1$s</xliff:g>"</string>
     <string name="user_dict_settings_add_menu_title" msgid="1254195365689387076">"Toevoegen"</string>
     <string name="user_dict_settings_add_dialog_title" msgid="4096700390211748168">"Toevoegen aan woordenboek"</string>

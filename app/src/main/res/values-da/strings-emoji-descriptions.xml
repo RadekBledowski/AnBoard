@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -23,8 +23,7 @@
     TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
  -->
 
-<resources
-    >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_emoji_00A9" msgid="2859822817116803638">"Copyrighttegn"</string>
     <string name="spoken_emoji_00AE" msgid="7708335454134589027">"Registreret brand-tegn"</string>
     <string name="spoken_emoji_203C" msgid="153340916701508663">"Dobbelt udråbstegn"</string>
@@ -744,7 +743,7 @@
     <string name="spoken_emoji_1F4A6" msgid="3837802182716483848">"Sveddryp-symbol"</string>
     <string name="spoken_emoji_1F4A7" msgid="5718438987757885141">"Dråbe"</string>
     <string name="spoken_emoji_1F4A8" msgid="4472108229720006377">"Løbesymbol"</string>
-    <string name="spoken_emoji_1F4A9" msgid="1240958472788430032">"Bunke møg"</string>
+    <string name="spoken_emoji_1F4A9" msgid="1240958472788430032">"Bæ"</string>
     <string name="spoken_emoji_1F4AA" msgid="8427525538635146416">"Spændte biceps"</string>
     <string name="spoken_emoji_1F4AB" msgid="5484114759939427459">"Svimmelhedssymbol"</string>
     <string name="spoken_emoji_1F4AC" msgid="5571196638219612682">"Taleboble"</string>
@@ -806,7 +805,7 @@
     <string name="spoken_emoji_1F4E4" msgid="2063561529097749707">"Udbakke"</string>
     <string name="spoken_emoji_1F4E5" msgid="3232462702926143576">"Indbakke"</string>
     <string name="spoken_emoji_1F4E6" msgid="3399454337197561635">"Pakke"</string>
-    <string name="spoken_emoji_1F4E7" msgid="5557136988503873238">"E-mailsymbol"</string>
+    <string name="spoken_emoji_1F4E7" msgid="5557136988503873238">"Mailsymbol"</string>
     <string name="spoken_emoji_1F4E8" msgid="30698793974124123">"Indgående kuvert"</string>
     <string name="spoken_emoji_1F4E9" msgid="5947550337678643166">"Kuvert under pil, der peger nedad"</string>
     <string name="spoken_emoji_1F4EA" msgid="772614045207213751">"Lukket postkasse med flaget nede"</string>

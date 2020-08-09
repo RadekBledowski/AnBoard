@@ -23,19 +23,31 @@
 >
     <Key
         latin:keySpec="w"
+        latin:additionalMoreKeys="*"
+        latin:keyHintLabel="*"
         latin:moreKeys="!text/morekeys_w" />
     <Key
+        latin:additionalMoreKeys="&quot;"
+        latin:keyHintLabel="&quot;"
         latin:keySpec="x" />
     <Key
         latin:keySpec="c"
+        latin:additionalMoreKeys="&apos;"
+        latin:keyHintLabel="&apos;"
         latin:moreKeys="!text/morekeys_c" />
     <Key
         latin:keySpec="v"
+        latin:additionalMoreKeys=":"
+        latin:keyHintLabel=":"
         latin:moreKeys="!text/morekeys_v" />
     <Key
+        latin:additionalMoreKeys=";"
+        latin:keyHintLabel=";"
         latin:keySpec="b" />
     <Key
         latin:keySpec="n"
+        latin:additionalMoreKeys="!"
+        latin:keyHintLabel="!"
         latin:moreKeys="!text/morekeys_n" />
     <switch>
         <case

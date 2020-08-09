@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="english_ime_input_options" msgid="3909945612939668554">"Opciones entrada texto"</string>
     <string name="use_contacts_for_spellchecking_option_title" msgid="5374120998125353898">"Nombres de contactos"</string>
     <string name="use_contacts_for_spellchecking_option_summary" msgid="8754413382543307713">"Añadir nombres de tu lista de contactos al corrector"</string>
@@ -31,7 +30,7 @@
     <string name="settings_screen_appearance" msgid="7358046399111611615">"Aspecto y diseño"</string>
     <string name="settings_screen_gesture" msgid="8826372746901183556">"Escritura gestual"</string>
     <string name="settings_screen_correction" msgid="1616818407747682955">"Corrección ortográfica"</string>
-    <string name="settings_screen_advanced" msgid="7472408607625972994">"Opciones avanzadas"</string>
+    <string name="settings_screen_advanced" msgid="7472408607625972994">"Ajustes avanzados"</string>
     <string name="settings_screen_theme" msgid="2137262503543943871">"Tema"</string>
     <string name="enable_split_keyboard" msgid="4177264923999493614">"Habilitar teclado dividido"</string>
     <string name="cloud_sync_title" msgid="8579271074443847055">"Sincronización del Teclado de Google"</string>
@@ -59,23 +58,23 @@
     <string name="use_contacts_dict_summary" msgid="6599983334507879959">"Utilizar nombres de contactos para sugerencias y correcciones"</string>
     <string name="use_personalized_dicts" msgid="5167396352105467626">"Sugerencias personalizadas"</string>
     <string name="enable_metrics_logging" msgid="5506372337118822837">"Mejorar <xliff:g id="APPLICATION_NAME">%s</xliff:g>"</string>
-    <string name="use_double_space_period" msgid="8781529969425082860">"Punto y espacio"</string>
-    <string name="use_double_space_period_summary" msgid="6532892187247952799">"Si tocas dos veces el espacio, se inserta un punto seguido de un espacio"</string>
+    <string name="use_double_space_period" msgid="8781529969425082860">"Doble espacio inserta punto"</string>
+    <string name="use_double_space_period_summary" msgid="6532892187247952799">"Insertar un punto seguido de un espacio al tocar dos veces la barra espaciadora"</string>
     <string name="auto_cap" msgid="1719746674854628252">"Mayúsculas automáticas"</string>
     <string name="auto_cap_summary" msgid="7934452761022946874">"Escribir la primera letra de cada frase en mayúscula"</string>
     <string name="edit_personal_dictionary" msgid="3996910038952940420">"Diccionario personal"</string>
     <string name="configure_dictionaries_title" msgid="4238652338556902049">"Diccionarios complementarios"</string>
     <string name="main_dictionary" msgid="4798763781818361168">"Diccionario principal"</string>
     <string name="prefs_show_suggestions" msgid="8026799663445531637">"Sugerencias de correcciones"</string>
-    <string name="prefs_show_suggestions_summary" msgid="1583132279498502825">"Mostrar las palabras sugeridas mientras se escribe"</string>
+    <string name="prefs_show_suggestions_summary" msgid="1583132279498502825">"Mostrar las palabras sugeridas mientras escribes"</string>
     <string name="prefs_block_potentially_offensive_title" msgid="5078480071057408934">"Bloquear palabras ofensivas"</string>
     <string name="prefs_block_potentially_offensive_summary" msgid="2371835479734991364">"No sugerir palabras que pueden ser ofensivas"</string>
     <string name="auto_correction" msgid="7630720885194996950">"Autocorrección"</string>
     <string name="auto_correction_summary" msgid="5625751551134658006">"Pulsar la tecla de espacio o punto para corregir errores"</string>
-    <string name="auto_correction_threshold_mode_off" msgid="8470882665417944026">"No"</string>
+    <string name="auto_correction_threshold_mode_off" msgid="8470882665417944026">"Desactivado"</string>
     <string name="auto_correction_threshold_mode_modest" msgid="8788366690620799097">"Parcial"</string>
-    <string name="auto_correction_threshold_mode_aggressive" msgid="7319007299148899623">"Total"</string>
-    <string name="auto_correction_threshold_mode_very_aggressive" msgid="1853309024129480416">"Casi total"</string>
+    <string name="auto_correction_threshold_mode_aggressive" msgid="7319007299148899623">"Agresiva"</string>
+    <string name="auto_correction_threshold_mode_very_aggressive" msgid="1853309024129480416">"Muy agresiva"</string>
     <string name="bigram_prediction" msgid="1084449187723948550">"Sugerir siguiente palabra"</string>
     <string name="bigram_prediction_summary" msgid="3896362682751109677">"Usar la palabra anterior para hacer sugerencias"</string>
     <string name="gesture_input" msgid="826951152254563827">"Habilitar escritura gestual"</string>

@@ -17,11 +17,7 @@
 <!-- Note: This emoji code point list is valid on JB-MR2 (API == 18).
      There is another emoji code point list for KLP and later under res/xml/values-v19. -->
 <resources>
-    <array
-        name="emoji_nature"
-        format="string"
-    >
-        <!-- <item>1f415</item> -->
+    <array name="emoji_nature" format="string">1f415
         <item>1f436</item>
         <item>1f429</item>
         <!-- <item>1f408</item> -->

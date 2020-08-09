@@ -108,10 +108,22 @@
         latin:parentStyle="numKeyBaseStyle" />
     <!-- TODO: Consolidate these space key styles with numSpaceKeyStyle above by introducing <case>
          predicator that checks device form-factor. -->
-    <key-style
-        latin:backgroundType="functional"
-        latin:keyActionFlags="enableLongPress"
-        latin:keySpec="!icon/space_key|!code/key_space"
-        latin:parentStyle="numKeyBaseStyle"
-        latin:styleName="tabletNumSpaceKeyStyle" />
+    <switch>
+        <case latin:keyboardTheme="ICS|KLP">
+            <key-style
+                latin:backgroundType="functional"
+                latin:keyActionFlags="enableLongPress"
+                latin:keySpec="!icon/space_key|!code/key_space"
+                latin:parentStyle="numKeyBaseStyle"
+                latin:styleName="tabletNumSpaceKeyStyle" />
+        </case>
+        <case latin:keyboardTheme="LXXLight|LXXDark">
+            <key-style
+                latin:backgroundType="spacebar"
+                latin:keyActionFlags="enableLongPress"
+                latin:keySpec="!icon/space_key|!code/key_space"
+                latin:parentStyle="numKeyBaseStyle"
+                latin:styleName="tabletNumSpaceKeyStyle" />
+        </case>
+    </switch>
 </merge>

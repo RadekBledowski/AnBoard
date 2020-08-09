@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_use_headphones" msgid="4313642710742229868">"חבר אוזניות כדי לשמוע הקראה של מפתחות סיסמה."</string>
     <string name="spoken_current_text_is" msgid="4240549866156675799">"‏הטקסט הנוכחי הוא %s"</string>
     <string name="spoken_no_text_entered" msgid="1711276837961785646">"לא הוזן טקסט"</string>
@@ -42,7 +41,7 @@
     <string name="spoken_description_mic" msgid="6153138783813452464">"קלט הקול"</string>
     <string name="spoken_description_emoji" msgid="7990051553008088470">"אמוג\'י"</string>
     <string name="spoken_description_return" msgid="3183692287397645708">"Enter"</string>
-    <string name="spoken_description_search" msgid="5099937658231911288">"חפש"</string>
+    <string name="spoken_description_search" msgid="5099937658231911288">"חיפוש"</string>
     <string name="spoken_description_dot" msgid="5644176501632325560">"נקודה"</string>
     <string name="spoken_description_language_switch" msgid="6818666779313544553">"החלף שפה"</string>
     <string name="spoken_description_action_next" msgid="431761808119616962">"הבא"</string>

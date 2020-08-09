@@ -23,14 +23,22 @@
 >
     <Key
         latin:keySpec="z"
+        latin:additionalMoreKeys="*"
+        latin:keyHintLabel="*"
         latin:moreKeys="!text/morekeys_z" />
     <Key
         latin:keySpec="!text/keyspec_x"
+        latin:additionalMoreKeys="&quot;"
+        latin:keyHintLabel="&quot;"
         latin:moreKeys="!text/morekeys_x" />
     <Key
         latin:keySpec="c"
+        latin:additionalMoreKeys="&apos;"
+        latin:keyHintLabel="&apos;"
         latin:moreKeys="!text/morekeys_c" />
     <Key
         latin:keySpec="v"
+        latin:additionalMoreKeys=":"
+        latin:keyHintLabel=":"
         latin:moreKeys="!text/morekeys_v" />
 </merge>

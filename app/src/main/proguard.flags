@@ -1,0 +1,28 @@
+# Keep classes and methods that have the @UsedForTesting annotation
+-keep @pl.rkbdi.anboard.inputmethod.annotations.UsedForTesting class *
+-keepclassmembers class * {
+    @pl.rkbdi.anboard.inputmethod.annotations.UsedForTesting *;
+}
+
+# Keep classes and methods that have the @ExternallyReferenced annotation
+-keep @pl.rkbdi.anboard.inputmethod.annotations.ExternallyReferenced class *
+-keepclassmembers class * {
+    @pl.rkbdi.anboard.inputmethod.annotations.ExternallyReferenced *;
+}
+
+# Keep native methods
+-keepclassmembers class * {
+    native <methods>;
+}
+
+# Keep classes that are used as a parameter type of methods that are also marked as keep
+# to preserve changing those methods' signature.
+-keep class pl.rkbdi.anboard.inputmethod.latin.AssetFileAddress
+-keep class pl.rkbdi.anboard.inputmethod.latin.Dictionary
+-keep class pl.rkbdi.anboard.inputmethod.latin.NgramContext
+-keep class pl.rkbdi.anboard.inputmethod.latin.makedict.ProbabilityInfo
+-keep class pl.rkbdi.anboard.inputmethod.latin.utils.LanguageModelParam
+
+# TODO: remove once used in code.
+-keep class pl.rkbdi.anboard.inputmethod.keyboard.KeyboardLayout { *; }
+

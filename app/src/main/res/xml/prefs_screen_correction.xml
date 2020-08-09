@@ -14,25 +14,13 @@
      limitations under the License.
 -->
 
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/settings_screen_correction"
     android:key="screen_correction">
     <PreferenceScreen
         android:key="edit_personal_dictionary"
         android:title="@string/edit_personal_dictionary">
         <intent android:action="android.settings.USER_DICTIONARY_SETTINGS" />
-    </PreferenceScreen>
-    <PreferenceScreen
-        android:key="configure_dictionaries_key"
-        android:title="@string/configure_dictionaries_title">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetClass="@string/dictionary_pack_settings_activity">
-            <extra
-                android:name="clientId"
-                android:value="@string/dictionary_pack_client_id" />
-        </intent>
     </PreferenceScreen>
     <CheckBoxPreference
         android:key="pref_key_block_potentially_offensive"

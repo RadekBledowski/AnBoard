@@ -19,9 +19,20 @@
 -->
 
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <key-style
-        latin:additionalMoreKeys="!text/keyspec_settings"
-        latin:backgroundType="functional"
-        latin:keyLabelFlags="hasPopupHint"
-        latin:styleName="settingsMoreKeysStyle" />
+    <!-- Key style for the key which may have settings key as more keys. -->
+    <switch>
+        <case latin:clobberSettingsKey="true">
+            <key-style
+                latin:backgroundType="functional"
+                latin:styleName="settingsMoreKeysStyle" />
+        </case>
+        <!-- clobberSettingsKey="false" -->
+        <default>
+            <key-style
+                latin:additionalMoreKeys="!text/keyspec_settings"
+                latin:backgroundType="functional"
+                latin:keyLabelFlags="hasPopupHint"
+                latin:styleName="settingsMoreKeysStyle" />
+        </default>
+    </switch>
 </merge>

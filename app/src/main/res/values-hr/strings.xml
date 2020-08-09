@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="english_ime_input_options" msgid="3909945612939668554">"Opcije ulaza"</string>
     <string name="use_contacts_for_spellchecking_option_title" msgid="5374120998125353898">"Potražite imena kontakata"</string>
     <string name="use_contacts_for_spellchecking_option_summary" msgid="8754413382543307713">"Provjera pravopisa upotrebljava unose iz vašeg popisa kontakata"</string>
@@ -79,7 +78,7 @@
     <string name="bigram_prediction" msgid="1084449187723948550">"Prijedlozi za sljedeću riječ"</string>
     <string name="bigram_prediction_summary" msgid="3896362682751109677">"Koristi se prethodnom riječi u izradi prijedloga"</string>
     <string name="gesture_input" msgid="826951152254563827">"Omogući pisanje kretnjama"</string>
-    <string name="gesture_input_summary" msgid="9180350639305731231">"Unesi riječ klizanjem preko slova"</string>
+    <string name="gesture_input_summary" msgid="9180350639305731231">"Unesite riječ klizanjem preko slova"</string>
     <string name="gesture_preview_trail" msgid="3802333369335722221">"Prikaži trag pokreta"</string>
     <string name="gesture_floating_preview_text" msgid="4443240334739381053">"Dinamički plutajući pregled"</string>
     <string name="gesture_floating_preview_text_summary" msgid="4472696213996203533">"Vidi predloženu riječ tijekom pokreta"</string>

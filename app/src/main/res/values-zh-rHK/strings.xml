@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="english_ime_input_options" msgid="3909945612939668554">"輸入選項"</string>
     <string name="use_contacts_for_spellchecking_option_title" msgid="5374120998125353898">"查找聯絡人姓名"</string>
     <string name="use_contacts_for_spellchecking_option_summary" msgid="8754413382543307713">"拼字檢查程式使用您的聯絡人名單中的各項記錄"</string>
@@ -77,9 +76,9 @@
     <string name="auto_correction_threshold_mode_aggressive" msgid="7319007299148899623">"加強模式"</string>
     <string name="auto_correction_threshold_mode_very_aggressive" msgid="1853309024129480416">"極度加強模式"</string>
     <string name="bigram_prediction" msgid="1084449187723948550">"建議下一個字詞"</string>
-    <string name="bigram_prediction_summary" msgid="3896362682751109677">"根據前一個字詞提出建議"</string>
+    <string name="bigram_prediction_summary" msgid="3896362682751109677">"根據上一個字詞提供建議"</string>
     <string name="gesture_input" msgid="826951152254563827">"啟用手勢輸入功能"</string>
-    <string name="gesture_input_summary" msgid="9180350639305731231">"透過滑動手指寫出字母來輸入字詞"</string>
+    <string name="gesture_input_summary" msgid="9180350639305731231">"透過在字母上滑動輸入字詞"</string>
     <string name="gesture_preview_trail" msgid="3802333369335722221">"顯示觸控蹤跡"</string>
     <string name="gesture_floating_preview_text" msgid="4443240334739381053">"動態浮動預覽"</string>
     <string name="gesture_floating_preview_text_summary" msgid="4472696213996203533">"在啟用手勢輸入時顯示建議的字詞"</string>
@@ -157,7 +156,7 @@
     <string name="setup_step3_action" msgid="600879797256942259">"設定其他語言"</string>
     <string name="setup_finish_action" msgid="276559243409465389">"完成"</string>
     <string name="show_setup_wizard_icon" msgid="5008028590593710830">"顯示應用程式圖示"</string>
-    <string name="show_setup_wizard_icon_summary" msgid="4119998322536880213">"在應用程式啟動器中顯示圖示"</string>
+    <string name="show_setup_wizard_icon_summary" msgid="4119998322536880213">"在啟動器中顯示圖示"</string>
     <string name="app_name" msgid="6320102637491234792">"字典供應商"</string>
     <string name="dictionary_provider_name" msgid="3027315045397363079">"字典供應商"</string>
     <string name="dictionary_service_name" msgid="6237472350693511448">"字典服務"</string>
@@ -175,7 +174,7 @@
     <string name="no_dictionaries_available" msgid="8039920716566132611">"沒有可用的字典"</string>
     <string name="check_for_updates_now" msgid="8087688440916388581">"重新整理"</string>
     <string name="last_update" msgid="730467549913588780">"上次更新日期"</string>
-    <string name="message_updating" msgid="4457761393932375219">"正在查看更新"</string>
+    <string name="message_updating" msgid="4457761393932375219">"正在檢查更新"</string>
     <string name="message_loading" msgid="5638680861387748936">"正在載入…"</string>
     <string name="main_dict_description" msgid="3072821352793492143">"主要字典"</string>
     <string name="cancel" msgid="6830980399865683324">"取消"</string>
@@ -204,7 +203,7 @@
     <string name="user_dict_settings_edit_dialog_title" msgid="3765774633869590352">"編輯字詞"</string>
     <string name="user_dict_settings_context_menu_edit_title" msgid="6812255903472456302">"編輯"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="8142932447689461181">"刪除"</string>
-    <string name="user_dict_settings_empty_text" msgid="6889278304342592383">"用戶字典中沒有任何字詞。如要新增字詞，請輕按「新增」(+) 按鈕。"</string>
+    <string name="user_dict_settings_empty_text" msgid="6889278304342592383">"您的用戶字典中沒有任何字詞。如要新增字詞，請輕按 [新增] (+) 按鈕。"</string>
     <string name="user_dict_settings_all_languages" msgid="8276126583216298886">"所有語言"</string>
     <string name="user_dict_settings_more_languages" msgid="7131268499685180461">"更多語言..."</string>
     <string name="user_dict_settings_delete" msgid="110413335187193859">"刪除"</string>

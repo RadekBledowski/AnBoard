@@ -18,8 +18,7 @@
 */
 -->
 
-<com.android.inputmethod.keyboard.emoji.EmojiPageKeyboardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<pl.rkbdi.anboard.inputmethod.keyboard.emoji.EmojiPageKeyboardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/emoji_keyboard_page"
     android:layoutDirection="ltr"
     android:layout_width="wrap_content"

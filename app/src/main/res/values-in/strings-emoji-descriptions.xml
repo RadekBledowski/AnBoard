@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -23,8 +23,7 @@
     TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
  -->
 
-<resources
-    >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="spoken_emoji_00A9" msgid="2859822817116803638">"Tanda hak cipta"</string>
     <string name="spoken_emoji_00AE" msgid="7708335454134589027">"Tanda terdaftar"</string>
     <string name="spoken_emoji_203C" msgid="153340916701508663">"Tanda seru ganda"</string>
@@ -677,8 +676,8 @@
     <string name="spoken_emoji_1F463" msgid="5850772903593010699">"Jejak kaki"</string>
     <string name="spoken_emoji_1F464" msgid="1228335905487734913">"Siluet patung dada"</string>
     <string name="spoken_emoji_1F465" msgid="4461307702499679879">"Siluet patung dada"</string>
-    <string name="spoken_emoji_1F466" msgid="1938873085514108889">"Anak laki-laki"</string>
-    <string name="spoken_emoji_1F467" msgid="8237080594860144998">"Anak perempuan"</string>
+    <string name="spoken_emoji_1F466" msgid="1938873085514108889">"Laki-laki"</string>
+    <string name="spoken_emoji_1F467" msgid="8237080594860144998">"Perempuan"</string>
     <string name="spoken_emoji_1F468" msgid="6081300722526675382">"Pria"</string>
     <string name="spoken_emoji_1F469" msgid="1090140923076108158">"Wanita"</string>
     <string name="spoken_emoji_1F46A" msgid="5063570981942606595">"Keluarga"</string>
@@ -856,7 +855,7 @@
     <string name="spoken_emoji_1F514" msgid="7027268683047322521">"Bel"</string>
     <string name="spoken_emoji_1F515" msgid="8903179856036069242">"Bel dengan tanda coret"</string>
     <string name="spoken_emoji_1F516" msgid="108097933937925381">"Bookmark"</string>
-    <string name="spoken_emoji_1F517" msgid="2450846665734313397">"Simbol tautan"</string>
+    <string name="spoken_emoji_1F517" msgid="2450846665734313397">"Simbol link"</string>
     <string name="spoken_emoji_1F518" msgid="7028220286841437832">"Tombol radio"</string>
     <string name="spoken_emoji_1F519" msgid="8211189165075445687">"Tulisan BACK dengan panah ke kiri di atas"</string>
     <string name="spoken_emoji_1F51A" msgid="823966751787338892">"Tulisan END dengan panah ke kiri di atas"</string>
@@ -1082,7 +1081,7 @@
     <!-- no translation found for spoken_emoji_1F644 (446284817942609022) -->
     <skip />
     <string name="spoken_emoji_1F645" msgid="5202090629227587076">"Wajah dengan isyarat tidak setuju"</string>
-    <string name="spoken_emoji_1F646" msgid="6734425134415138134">"Wajah dengan isyarat oke"</string>
+    <string name="spoken_emoji_1F646" msgid="6734425134415138134">"Wajah dengan gestur oke"</string>
     <string name="spoken_emoji_1F647" msgid="1090285518444205483">"Orang yang membungkuk dalam-dalam"</string>
     <string name="spoken_emoji_1F648" msgid="8978535230610522356">"Monyet menutup mata"</string>
     <string name="spoken_emoji_1F649" msgid="8486145279809495102">"Monyet menutup telinga"</string>
@@ -1133,7 +1132,7 @@
     <string name="spoken_emoji_1F6A6" msgid="485575967773793454">"Lampu lalu lintas tegak lurus"</string>
     <string name="spoken_emoji_1F6A7" msgid="6411048933816976794">"Tanda kontruksi"</string>
     <string name="spoken_emoji_1F6A8" msgid="6345717218374788364">"Lampu putar mobil polisi"</string>
-    <string name="spoken_emoji_1F6A9" msgid="6586380356807600412">"Bendera segitiga di pos"</string>
+    <string name="spoken_emoji_1F6A9" msgid="6586380356807600412">"Bendera segitiga di postingan"</string>
     <string name="spoken_emoji_1F6AA" msgid="8954448167261738885">"Pintu"</string>
     <string name="spoken_emoji_1F6AB" msgid="5313946262888343544">"Tanda larangan masuk"</string>
     <string name="spoken_emoji_1F6AC" msgid="6946858177965948288">"Simbol merokok"</string>

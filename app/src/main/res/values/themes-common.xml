@@ -37,7 +37,7 @@
     <style name="KeyboardView">
         <!-- This keyBackground is needed to run unit tests based on {@link InputTestBase}. -->
         <!-- TODO: Apply default {@link KeyboardTheme} to {@link InputTestBase} and remove this. -->
-        <!-- <item name="keyBackground">@drawable/btn_keyboard_key_klp</item> -->
+        <item name="keyBackground">@drawable/btn_keyboard_key_klp</item>
         <item name="keyTypeface">normal</item>
         <!-- A negative value to disable key text shadow layer. -->
         <item name="keyTextShadowRadius">-1.0</item>
@@ -88,31 +88,59 @@
         <item name="altCodeKeyWhileTypingFadeinAnimator">@anim/alt_code_key_while_typing_fadein</item>
         -->
         <!-- Common attributes of MainKeyboardView for gesture typing detection and recognition -->
-        <item name="gestureFloatingPreviewTextLingerTimeout">@integer/config_gesture_floating_preview_text_linger_timeout</item>
-        <item name="gestureStaticTimeThresholdAfterFastTyping">@integer/config_gesture_static_time_threshold_after_fast_typing</item>
-        <item name="gestureDetectFastMoveSpeedThreshold">@fraction/config_gesture_detect_fast_move_speed_threshold</item>
-        <item name="gestureDynamicThresholdDecayDuration">@integer/config_gesture_dynamic_threshold_decay_duration</item>
-        <item name="gestureDynamicTimeThresholdFrom">@integer/config_gesture_dynamic_time_threshold_from</item>
-        <item name="gestureDynamicTimeThresholdTo">@integer/config_gesture_dynamic_time_threshold_to</item>
-        <item name="gestureDynamicDistanceThresholdFrom">@fraction/config_gesture_dynamic_distance_threshold_from</item>
-        <item name="gestureDynamicDistanceThresholdTo">@fraction/config_gesture_dynamic_distance_threshold_to</item>
-        <item name="gestureSamplingMinimumDistance">@fraction/config_gesture_sampling_minimum_distance</item>
-        <item name="gestureRecognitionMinimumTime">@integer/config_gesture_recognition_minimum_time</item>
-        <item name="gestureRecognitionUpdateTime">@integer/config_gesture_recognition_update_time</item>
-        <item name="gestureRecognitionSpeedThreshold">@fraction/config_gesture_recognition_speed_threshold</item>
-        <item name="suppressKeyPreviewAfterBatchInputDuration">@integer/config_suppress_key_preview_after_batch_input_duration</item>
+        <item name="gestureFloatingPreviewTextLingerTimeout">
+            @integer/config_gesture_floating_preview_text_linger_timeout
+        </item>
+        <item name="gestureStaticTimeThresholdAfterFastTyping">
+            @integer/config_gesture_static_time_threshold_after_fast_typing
+        </item>
+        <item name="gestureDetectFastMoveSpeedThreshold">
+            @fraction/config_gesture_detect_fast_move_speed_threshold
+        </item>
+        <item name="gestureDynamicThresholdDecayDuration">
+            @integer/config_gesture_dynamic_threshold_decay_duration
+        </item>
+        <item name="gestureDynamicTimeThresholdFrom">
+            @integer/config_gesture_dynamic_time_threshold_from
+        </item>
+        <item name="gestureDynamicTimeThresholdTo">
+            @integer/config_gesture_dynamic_time_threshold_to
+        </item>
+        <item name="gestureDynamicDistanceThresholdFrom">
+            @fraction/config_gesture_dynamic_distance_threshold_from
+        </item>
+        <item name="gestureDynamicDistanceThresholdTo">
+            @fraction/config_gesture_dynamic_distance_threshold_to
+        </item>
+        <item name="gestureSamplingMinimumDistance">
+            @fraction/config_gesture_sampling_minimum_distance
+        </item>
+        <item name="gestureRecognitionMinimumTime">
+            @integer/config_gesture_recognition_minimum_time
+        </item>
+        <item name="gestureRecognitionUpdateTime">@integer/config_gesture_recognition_update_time
+        </item>
+        <item name="gestureRecognitionSpeedThreshold">
+            @fraction/config_gesture_recognition_speed_threshold
+        </item>
+        <item name="suppressKeyPreviewAfterBatchInputDuration">
+            @integer/config_suppress_key_preview_after_batch_input_duration
+        </item>
     </style>
-    <style
-        name="MainKeyboardView"
-        parent="KeyboardView" />
-    <!-- Though {@link com.android.inputmethod.keyboard.emoji.EmojiPalettesView} doesn't extend
-         {@link com.android.inputmethod.keyboard.KeyboardView}, some views inside it, for instance
-         delete button, need themed {@link com.android.inputmethod.keyboard.KeyboardView}
+
+    <style name="MainKeyboardView" parent="KeyboardView" />
+    <!-- Though {@link pl.rkbdi.anboard.inputmethod.keyboard.emoji.EmojiPalettesView} doesn't extend
+         {@link pl.rkbdi.anboard.inputmethod.keyboard.KeyboardView}, some views inside it, for instance
+         delete button, need themed {@link pl.rkbdi.anboard.inputmethod.keyboard.KeyboardView}
          attributes. -->
     <style name="EmojiPalettesView" />
+
     <style name="MoreKeysKeyboard" />
+
     <style name="MoreKeysKeyboardView" />
+
     <style name="SuggestionStripView" />
+
     <style name="SuggestionWord">
         <item name="android:minWidth">@dimen/config_suggestion_min_width</item>
         <item name="android:textSize">@dimen/config_suggestion_text_size</item>

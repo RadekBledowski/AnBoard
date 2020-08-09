@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -24,11 +24,10 @@
     TODO: Remove these string resources when TTS/TalkBack support these letters.
  -->
 
-<resources
-    >
-    <string name="spoken_accented_letter_00AA" msgid="4374325261868451570">"स्त्रीलिंग क्रमसूचक संकेतक"</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="spoken_accented_letter_00AA" msgid="4374325261868451570">"स्त्रीलिंग बताने वाला संकेत"</string>
     <string name="spoken_accented_letter_00B5" msgid="9031387673828823891">"माइक्रो चिह्न"</string>
-    <string name="spoken_accented_letter_00BA" msgid="5045198452071207437">"पुल्लिंग क्रमसूचक संकेतक"</string>
+    <string name="spoken_accented_letter_00BA" msgid="5045198452071207437">"पुल्लिंग बताने वाला संकेत"</string>
     <string name="spoken_accented_letter_00DF" msgid="2260098367028134281">"शार्प एस"</string>
     <string name="spoken_accented_letter_00E0" msgid="2234515772182387086">"ए, ग्रेव"</string>
     <string name="spoken_accented_letter_00E1" msgid="7780174500802535063">"ए, एक्यूट"</string>
@@ -203,6 +202,6 @@
     <string name="spoken_symbol_2205" msgid="4457188084269117343">"खाली सेट"</string>
     <string name="spoken_symbol_2206" msgid="4856786565708380687">"वृद्धि"</string>
     <string name="spoken_symbol_2264" msgid="5092061257745123554">"इससे कम या इसके बराबर"</string>
-    <string name="spoken_symbol_2265" msgid="1907966479878036357">"इससे अधिक या इसके बराबर"</string>
+    <string name="spoken_symbol_2265" msgid="1907966479878036357">"इससे ज़्यादा या इसके बराबर"</string>
     <string name="spoken_symbol_2605" msgid="5202920479405857753">"काला तारा"</string>
 </resources>

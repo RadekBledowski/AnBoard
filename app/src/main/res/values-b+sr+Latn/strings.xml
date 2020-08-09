@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -18,8 +18,7 @@
 */
  -->
 
-<resources
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="english_ime_input_options" msgid="3909945612939668554">"Opcije unosa"</string>
     <string name="use_contacts_for_spellchecking_option_title" msgid="5374120998125353898">"Potraži imena kontakata"</string>
     <string name="use_contacts_for_spellchecking_option_summary" msgid="8754413382543307713">"Kontrolor pravopisa koristi unose sa liste kontakata"</string>
@@ -136,7 +135,7 @@
     <string name="custom_input_style_already_exists" msgid="8008728952215449707">"Isti stil unosa već postoji: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
     <string name="prefs_keypress_vibration_duration_settings" msgid="7918341459947439226">"Trajanje vibracije pri pritisku"</string>
     <string name="prefs_keypress_sound_volume_settings" msgid="6027007337036891623">"Jačina zvuka pri pritisku"</string>
-    <string name="prefs_key_longpress_timeout_settings" msgid="6102240298932897873">"Odlaganje pri dugom pritisku"</string>
+    <string name="prefs_key_longpress_timeout_settings" msgid="6102240298932897873">"Zadržavanje pri dugom pritisku"</string>
     <string name="prefs_enable_emoji_alt_physical_key" msgid="5963640002335470112">"Emodži za fizičku tastaturu"</string>
     <string name="prefs_enable_emoji_alt_physical_key_summary" msgid="5259484820941627827">"Fizički taster Alt pokazuje paletu emodžija"</string>
     <string name="button_default" msgid="3988017840431881491">"Podrazumevano"</string>
